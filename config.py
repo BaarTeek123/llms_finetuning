@@ -1,7 +1,8 @@
+from os.path import join
 from pathlib import Path
 from typing import Union
 
-from pydantic import BaseModel, Field, AliasPath
+from pydantic import BaseModel, Field
 
 
 class DataArgs(BaseModel):
@@ -20,19 +21,20 @@ class DataArgs(BaseModel):
 
 
 class Config(BaseModel):
-    EPOCHS: int = 3
+    EPOCHS: int = 21
     BATCH_SIZE: int = 32
-    LR: float = 2e-5
+    LR: float = 0.05
     METRIC: str = 'accuracy'
     MODEL_NAME: str = "prajjwal1/bert-tiny"
-    DATASET: str = "qqp"
+    DATASET: str = Field(alias='dataset')
     TASK: str = Field(alias='task')
-    OUTPUT_DIR: Union[str, Path] = None
+    MODEL_OUTPUT_DIR: Union[str, Path] = None
+    RESULTS_PATH: Union[str, Path] = None
     PUSH_TO_HUB: bool = True
     MAX_LENGTH: int = 512
 
     def __init__(self, **data):
         super().__init__(**data)
-        self.OUTPUT_DIR = f"out/{self.MODEL_NAME.split('/')[-1]}-{self.TASK}-{self.DATASET}"
-
+        self.MODEL_OUTPUT_DIR = f"out/{self.MODEL_NAME.split('/')[-1]}-{self.TASK}-{self.DATASET}"
+        self.RESULTS_PATH = join('results', 'evaluation_results.json')
 

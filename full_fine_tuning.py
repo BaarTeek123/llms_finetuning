@@ -1,31 +1,27 @@
-from os.path import join
+import argparse
 
 from transformers import BertTokenizer, BertForSequenceClassification, Trainer, TrainingArguments
 
 from Logger import logger
 from config import DataArgs, Config
-from dataset import GlueDataset
+from src.dataset import GlueDataset
 from utils import count_trainable_parameters, save_results_to_json
 
-if __name__ == '__main__':
-    DATASET = 'mnli'
-    DATASET = 'qnli'
-    # DATASET = 'qqp'
-    # DATASET = "sst2"
+
+def main(dataset_name: str):
 
     data_args = DataArgs()
-    configuration = Config()
+    configuration = Config(task='full_fine_tuning', dataset=dataset_name)
     # Define training arguments
     training_args = TrainingArguments(
-        output_dir=configuration.OUTPUT_DIR,
+        output_dir=configuration.MODEL_OUTPUT_DIR,
         num_train_epochs=configuration.EPOCHS,
         per_device_train_batch_size=configuration.BATCH_SIZE,
         per_device_eval_batch_size=configuration.BATCH_SIZE,
         warmup_steps=500,
         weight_decay=0.01,
         logging_dir='./logs',
-        logging_steps=10,
-
+        logging_steps=10
     )
 
     # Load the tokenizer and model
@@ -38,7 +34,7 @@ if __name__ == '__main__':
     logger.info(f"Trainable parameters count: {trainable_params} ({trainable_params/total_params*100}%)")
 
     # Initialize the dataset
-    glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=DATASET, training_args=training_args)
+    glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
 
     # Initialize the Trainer
     trainer = Trainer(
@@ -57,5 +53,15 @@ if __name__ == '__main__':
     eval_results = trainer.evaluate()
     logger.info("Evaluation results: %s", eval_results)
 
-    # Save evaluation results to JSON
-    save_results_to_json(join('out', 'evaluation_results.json'), 'TinyBERT', DATASET, eval_results)
+    save_results_to_json(
+        configuration.RESULTS_PATH,
+        'full_fine_tuning',
+        dataset_name, eval_results
+    )
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description="Run main with specific dataset")
+    parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
+    args = parser.parse_args()
+    main(args.dataset)

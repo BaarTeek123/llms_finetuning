@@ -6,7 +6,7 @@ from transformers import Trainer, TrainingArguments, BertForSequenceClassificati
 
 from Logger import logger
 from config import DataArgs, Config
-from dataset import GlueDataset
+from src.dataset import GlueDataset
 from utils import save_results_to_json, count_trainable_parameters
 
 warnings.simplefilter("ignore")
@@ -75,10 +75,10 @@ if __name__ == '__main__':
     # DATASET = "sst2"
 
     data_args = DataArgs()
-    configuration = Config(task='soft_prompting')
+    configuration = Config(task='soft_prompting', dataset=DATASET)
     # Define training arguments
     training_args = TrainingArguments(
-        output_dir=configuration.OUTPUT_DIR,
+        output_dir=configuration.MODEL_OUTPUT_DIR,
         num_train_epochs=configuration.EPOCHS,
         per_device_train_batch_size=configuration.BATCH_SIZE,
         per_device_eval_batch_size=configuration.BATCH_SIZE,

@@ -1,17 +1,17 @@
 import argparse
 
-from peft import get_peft_model, TaskType, PromptTuningConfig
-from transformers import BertTokenizer, BertForSequenceClassification, Trainer, TrainingArguments
+from transformers import Trainer, TrainingArguments, BertTokenizer
 
 from Logger import logger
 from config import DataArgs, Config
 from src.dataset import GlueDataset
-from utils import count_trainable_parameters, save_results_to_json
+from model import NoTinyBERT
+from utils import save_results_to_json, count_trainable_parameters
 
-def main(dataset_name):
 
+def main(dataset_name: str):
     data_args = DataArgs()
-    configuration = Config(task='prefix', dataset=dataset_name)
+    configuration = Config(task='additional_layer', dataset=dataset_name)
     # Define training arguments
     training_args = TrainingArguments(
         output_dir=configuration.MODEL_OUTPUT_DIR,
@@ -22,32 +22,22 @@ def main(dataset_name):
         weight_decay=0.01,
         logging_dir='./logs',
         logging_steps=10,
-
     )
 
-    # Load the tokenizer and model
+    # Initialize the dataset, tokenizer and model
     tokenizer = BertTokenizer.from_pretrained(configuration.MODEL_NAME, do_lower_case=False)
-    model = BertForSequenceClassification.from_pretrained(configuration.MODEL_NAME)
 
-    base_model_parameters = set(model.state_dict().keys())
-    # set up peft
-    peft_config = PromptTuningConfig(
-        peft_type="PREFIX_TUNING",
-        task_type=TaskType.SEQ_CLS,
-        num_virtual_tokens=30,
-        tokenizer_name_or_path=configuration.MODEL_NAME,
-        inference_mode=False
+    glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
+
+    model = NoTinyBERT(
+        configuration.MODEL_NAME,
+        num_labels=glue_dataset.num_labels
     )
-    model = get_peft_model(model, peft_config)
-
-    # debugging purpose
-    logger.info(f"New Parameters Added by Adapters: {set(model.state_dict().keys()) - base_model_parameters}")
 
     total_params, trainable_params = count_trainable_parameters(model)
-    logger.info(f"Total parameters: {total_params} || Trainable parameters: {trainable_params} ({trainable_params/total_params*100}%)")
 
-    # Initialize the dataset
-    glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
+    logger.info(
+        f"Total parameters: {total_params} || Trainable parameters: {trainable_params} ({trainable_params / total_params * 100}%)")
 
     # Initialize the Trainer
     trainer = Trainer(
@@ -69,13 +59,13 @@ def main(dataset_name):
     # Save evaluation results to JSON
     save_results_to_json(
         configuration.RESULTS_PATH,
-        'prefix',
+        'NoTinyBERT',
         dataset_name, eval_results
     )
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Run main with specific dataset")
+    parser = argparse.ArgumentParser(description="Run NoTinyBERT")
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
     args = parser.parse_args()
     main(args.dataset)
