@@ -1,4 +1,6 @@
 import logging
+
+import evaluate
 from datasets import load_dataset, load_metric
 from transformers import AutoTokenizer, BertTokenizer, BertConfig, BertForSequenceClassification, \
     DataCollatorWithPadding, default_data_collator, TrainingArguments, Trainer
@@ -25,10 +27,21 @@ class GlueDataset:
         raw_datasets = load_dataset("glue", dataset_name)
 
         # Prepare labels
-        self._prepare_labels(raw_datasets)
+        self.label_list = raw_datasets["train"].features["label"].names
+        self.num_labels = len(self.label_list)
+        self.sentence1_key, self.sentence2_key = TASK_TO_KEYS[self.dataset_name]
+
+        # Set padding strategy
+        self.padding = "max_length" if self.data_args.pad_to_max_length else False
+
+        # Check max sequence length
+        assert self.data_args.max_seq_length < self.tokenizer.model_max_length
+
+        self.max_seq_length = min(self.data_args.max_seq_length, self.tokenizer.model_max_length)
 
         # Preprocess dataset
         raw_datasets = self._preprocess_datasets(raw_datasets)
+
 
         # Split datasets
         self.train_dataset = self._get_dataset(
@@ -49,28 +62,28 @@ class GlueDataset:
         )
 
         # Load metric
-        self.metric = load_metric("glue", self.dataset_name)
+        self.metric = evaluate.load("glue", self.dataset_name)
 
         # Set data collator
         self.data_collator = self._get_data_collator()
 
-    def _prepare_labels(self, raw_datasets):
-        """Prepare labels and label mappings."""
-        self.label_list = raw_datasets["train"].features["label"].names
-        self.num_labels = len(self.label_list)
-        self.label2id = {l: i for i, l in enumerate(self.label_list)}
-        self.id2label = {id: label for label, id in self.label2id.items()}
+    # def _prepare_labels(self, raw_datasets):
+    #     """Prepare labels and label mappings."""
+    #     self.label_list = raw_datasets["train"].features["label"].names
+    #     self.num_labels = len(self.label_list)
+    #     # self.label2id = {l: i for i, l in enumerate(self.label_list)}
+    #     # self.id2label = {id: label for label, id in self.label2id.items()}
 
         # Set sentence keys
-        self.sentence1_key, self.sentence2_key = TASK_TO_KEYS[self.dataset_name]
-
-        # Set padding strategy
-        self.padding = "max_length" if self.data_args.pad_to_max_length else False
-
-        # Check max sequence length
-        assert self.data_args.max_seq_length < self.tokenizer.model_max_length
-
-        self.max_seq_length = min(self.data_args.max_seq_length, self.tokenizer.model_max_length)
+        # self.sentence1_key, self.sentence2_key = TASK_TO_KEYS[self.dataset_name]
+        #
+        # # Set padding strategy
+        # self.padding = "max_length" if self.data_args.pad_to_max_length else False
+        #
+        # # Check max sequence length
+        # assert self.data_args.max_seq_length < self.tokenizer.model_max_length
+        #
+        # self.max_seq_length = min(self.data_args.max_seq_length, self.tokenizer.model_max_length)
 
     def _preprocess_datasets(self, raw_datasets):
         """Preprocess the datasets using the tokenizer."""
@@ -97,7 +110,7 @@ class GlueDataset:
 
 
     def _get_data_collator(self):
-        """Determine the appropriate data collator."""
+        """Determine the data collator."""
         if self.data_args.pad_to_max_length:
             return default_data_collator
         elif self.training_args.fp16:

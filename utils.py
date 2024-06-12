@@ -7,6 +7,7 @@ def count_trainable_parameters(model):
     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     return total_params, trainable_params
 
+# NotADirectoryError
 
 def save_results_to_json(file_path, model_name, dataset_name, results):
     """Save the evaluation results to a JSON file."""
