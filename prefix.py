@@ -20,14 +20,15 @@ def main(dataset_name):
         per_device_eval_batch_size=configuration.BATCH_SIZE,
         warmup_steps=500,
         weight_decay=0.01,
-        logging_dir='./logs',
+        logging_dir='logs',
         logging_steps=10,
 
     )
 
-    # Load the tokenizer and model
+    # Load the tokenizer, dataset and model
     tokenizer = BertTokenizer.from_pretrained(configuration.MODEL_NAME, do_lower_case=False)
-    model = BertForSequenceClassification.from_pretrained(configuration.MODEL_NAME)
+    glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
+    model = BertForSequenceClassification.from_pretrained(configuration.MODEL_NAME, num_labels=glue_dataset.num_labels)
 
     base_model_parameters = set(model.state_dict().keys())
     # set up peft
@@ -46,9 +47,6 @@ def main(dataset_name):
     total_params, trainable_params = count_trainable_parameters(model)
     logger.info(f"Total parameters: {total_params} || Trainable parameters: {trainable_params} ({trainable_params/total_params*100}%)")
 
-    # Initialize the dataset
-    glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
-
     # Initialize the Trainer
     trainer = Trainer(
         model=model,
@@ -61,16 +59,33 @@ def main(dataset_name):
     )
 
     # Train the model
-    trainer.train()
+    train_results = trainer.train()
+    logger.info("Train results: %s", train_results.metrics)
+    trainer.log_metrics("eval", train_results.metrics)
+    trainer.save_metrics("eval", train_results.metrics)
+    trainer.save_state()
 
+    # set to evaluation mode
+    model.eval()
+
+    # evaluate the model
     eval_results = trainer.evaluate()
     logger.info("Evaluation results: %s", eval_results)
+    trainer.log_metrics("eval", eval_results)
+    trainer.save_metrics("eval", eval_results)
 
     # Save evaluation results to JSON
     save_results_to_json(
         configuration.RESULTS_PATH,
         'prefix',
-        dataset_name, eval_results
+        dataset_name,
+        train_results=train_results,
+        eval_results=eval_results,
+        additional_comments={
+            "trainable parameters": trainable_params,
+            "total parameters": total_params,
+            "trainable parameters ratio (%)": trainable_params / total_params * 100
+        }
     )
 
 
@@ -78,4 +93,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run main with specific dataset")
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
     args = parser.parse_args()
-    main(args.dataset)
+    try:
+        main(args.dataset)
+    except Exception as ex:
+        logger.error(f"Something went wrong {ex}")

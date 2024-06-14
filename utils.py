@@ -9,7 +9,7 @@ def count_trainable_parameters(model):
 
 # NotADirectoryError
 
-def save_results_to_json(file_path, task_type, dataset_name, results):
+def save_results_to_json(file_path, task_type, dataset_name, train_results, eval_results, additional_comments: dict=None):
     """Save the evaluation results to a JSON file."""
 
     try:
@@ -23,8 +23,10 @@ def save_results_to_json(file_path, task_type, dataset_name, results):
     data[key] = {
         "task_type": task_type,
         "dataset_name": dataset_name,
-        "results": results
+        "train results": train_results,
+        "eval results": eval_results
     }
+    data.update({"Comments": additional_comments})
 
     with open(file_path, 'w') as file:
         dump(data, file, indent=4)

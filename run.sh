@@ -2,9 +2,9 @@
 # Script: run_all_datasets.sh
 
 datasets=("mnli" "qnli" "qqp" "sst2")
-file_names=("ia3.py" "full_fine_tuning.py" "lora.py" "prefix_lora.py" "top_layer.py")
+#file_names=("ia3.py" "full_fine_tuning.py" "lora.py" "prefix" "prefix_lora.py" "top_layer.py" "")
 
-
+file_names=("prefix.py" "prefix_lora.py")
 
 # Loop through each Python script
 for file in "${file_names[@]}"; do

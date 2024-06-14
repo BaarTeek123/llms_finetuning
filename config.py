@@ -9,19 +9,20 @@ class DataArgs(BaseModel):
     pad_to_max_length: bool = True
     max_seq_length: int = 128
     overwrite_cache: bool = False
-    max_train_samples: int = None
-    max_predict_samples: int = None
-    max_eval_samples: int = None
-    # max_train_samples: int = 10000
-    # max_predict_samples: int = 2000
-    # max_eval_samples: int = 1000
+    # max_train_samples: int = None
+    # max_predict_samples: int = None
+    # max_eval_samples: int = None
+    max_train_samples: int = 10000
+    max_predict_samples: int = 2000
+    max_eval_samples: int = 1000
 
     class Config:
         frozen = True
 
 
 class Config(BaseModel):
-    EPOCHS: int = 21
+    # EPOCHS: int = 21
+    EPOCHS: int = 2
     BATCH_SIZE: int = 32
     LR: float = 0.05
     METRIC: str = 'accuracy'
