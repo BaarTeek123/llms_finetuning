@@ -22,6 +22,8 @@ def main(dataset_name: str):
         weight_decay=0.01,
         logging_dir='logs',
         logging_steps=10,
+        load_best_model_at_end=True
+
     )
 
     # Initialize the dataset, tokenizer and model

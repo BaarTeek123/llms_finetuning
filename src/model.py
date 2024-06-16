@@ -26,9 +26,9 @@ class NoTinyBERT(torch.nn.Module):
         self.dropout = dropout
         self.classifier = torch.nn.Linear(config.hidden_size, num_labels)
 
-    def forward(self, input_ids=None, attention_mask=None, labels=None):
+    def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None):
         # Extract outputs from the body
-        outputs = self.model(input_ids=input_ids, attention_mask=attention_mask)
+        outputs = self.model(input_ids=input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids)
         sequence_output = outputs.last_hidden_state
 
         # Add custom layers
@@ -47,4 +47,3 @@ class NoTinyBERT(torch.nn.Module):
             hidden_states=outputs.hidden_states,
             attentions=outputs.attentions
         )
-

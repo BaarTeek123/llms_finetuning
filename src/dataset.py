@@ -3,6 +3,7 @@ import logging
 import evaluate
 import numpy as np
 from datasets import load_dataset
+from torch.utils.data import DataLoader
 from transformers import AutoTokenizer, DataCollatorWithPadding, default_data_collator, BertTokenizer, TrainingArguments
 from transformers.trainer_utils import EvalPrediction
 
@@ -107,8 +108,6 @@ class GlueDataset:
 
 if __name__ == "__main__":
 
-
-
     # Initial
     for dataset_name in list(TASK_TO_KEYS.keys()):
         data_args = DataArgs()
@@ -132,6 +131,10 @@ if __name__ == "__main__":
 
         )
         dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
+
+        for batch in DataLoader(dataset.train_dataset):
+            print(f"{dataset_name}: {batch.keys()}")
+            break
 
         print(f"{dataset_name} \t train: {np.unique(dataset.train_dataset['label'])} \t eval: {np.unique(dataset.eval_dataset['label'])}"
               f"\t test: {np.unique(dataset.predict_dataset['label'])}")

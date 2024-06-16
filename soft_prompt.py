@@ -1,5 +1,4 @@
 import argparse
-from os.path import join
 
 from transformers import Trainer, TrainingArguments, BertForSequenceClassification, BertTokenizer
 

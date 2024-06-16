@@ -2,6 +2,7 @@ from os.path import join
 from pathlib import Path
 from typing import Union
 
+import numpy as np
 from pydantic import BaseModel, Field
 
 
@@ -9,19 +10,18 @@ class DataArgs(BaseModel):
     pad_to_max_length: bool = True
     max_seq_length: int = 128
     overwrite_cache: bool = False
-    # max_train_samples: int = None
-    # max_predict_samples: int = None
-    # max_eval_samples: int = None
-    max_train_samples: int = 10000
-    max_predict_samples: int = 2000
-    max_eval_samples: int = 1000
+    max_train_samples: int = None
+    max_predict_samples: int = None
+    max_eval_samples: int = None
+    # max_train_samples: int = 10000
+    # max_predict_samples: int = 2000
+    # max_eval_samples: int = 1000
 
     class Config:
         frozen = True
 
 
 class Config(BaseModel):
-    # EPOCHS: int = 21
     EPOCHS: int = 2
     BATCH_SIZE: int = 32
     LR: float = 0.05
@@ -39,3 +39,12 @@ class Config(BaseModel):
         self.MODEL_OUTPUT_DIR = f"out/{self.MODEL_NAME.split('/')[-1]}-{self.TASK}-{self.DATASET}"
         self.RESULTS_PATH = join('results', 'evaluation_results.json')
 
+
+class PrivateConfig(Config):
+    DELTA: float = 10e-6
+    EPSILON: float = np.inf
+    MAX_GRAD_NORM: float = 0.1
+
+    def __init__(self, **data):
+        super().__init__(**data)
+        self.MODEL_OUTPUT_DIR = f"out/{self.MODEL_NAME.split('/')[-1]}-{self.TASK}-{self.DATASET}_DP_{self.DELTA}_{self.EPSILON}"
