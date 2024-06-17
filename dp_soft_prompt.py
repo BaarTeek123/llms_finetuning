@@ -16,7 +16,7 @@ from utils import _dataset_to_tensordataset, evaluate, save_results_to_json, cou
 
 def main(dataset_name: str, epsilon: float):
     data_args = DataArgs()
-    privacy_engine = PrivacyEngine()
+
     configuration = PrivateConfig(task='dp soft-prompting', dataset=dataset_name)
 
     training_args = TrainingArguments(
@@ -70,7 +70,7 @@ def main(dataset_name: str, epsilon: float):
 
     save_results_to_json(
         configuration.RESULTS_PATH,
-        'full_fine_tuning_dp',
+        'prompt_dpsgd',
         dataset_name,
         train_results={},
         eval_results=eval_results,
@@ -86,7 +86,7 @@ def main(dataset_name: str, epsilon: float):
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description="Run dp soft-prompting")
+    parser = argparse.ArgumentParser(description="Run prompt_dpsgd")
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
     parser.add_argument('epsilon', type=lambda x: (
         float(x) if float(x) > 0 else argparse.ArgumentTypeError(f"{x} is not a positive float or int")),
