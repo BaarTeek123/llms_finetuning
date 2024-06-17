@@ -93,7 +93,7 @@ def main(dataset_name):
         }
     )
 
-
+main("mnli")
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run Soft prompt")
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')

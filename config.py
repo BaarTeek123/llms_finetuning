@@ -44,7 +44,10 @@ class PrivateConfig(Config):
     DELTA: float = 10e-6
     EPSILON: float = np.inf
     MAX_GRAD_NORM: float = 0.1
+    NOISE_SCALE: float = 1.0
+    SAMPLING_RATE: float = 0.1
 
     def __init__(self, **data):
         super().__init__(**data)
+        self.RESULTS_PATH = join('results', 'evaluation_results_dp.json')
         self.MODEL_OUTPUT_DIR = f"out/{self.MODEL_NAME.split('/')[-1]}-{self.TASK}-{self.DATASET}_DP_{self.DELTA}_{self.EPSILON}"

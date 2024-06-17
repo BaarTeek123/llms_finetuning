@@ -81,7 +81,7 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
 
                 if step > 0 and step % 5000 == 0:
                     train_loss = np.mean(losses)
-                    eps = privacy_engine.get_epsilon(delta)
+                    eps = privacy_engine.get_epsilon(delta) if privacy_engine else None
 
                     eval_loss, eval_accuracy = evaluate(model,
                                                         test_dataloader,

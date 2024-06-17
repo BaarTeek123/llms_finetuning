@@ -1,23 +1,17 @@
-import numpy as np
-import torch
 import argparse
 
-from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss
+import numpy as np
+import torch
+from opacus import PrivacyEngine
 from torch.optim import SGD
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from transformers import BertTokenizer, BertForSequenceClassification, Trainer, TrainingArguments
-
-
 from torch.utils.data import DataLoader, SequentialSampler
+from transformers import BertTokenizer, BertForSequenceClassification, TrainingArguments
+
 from Logger import logger
-from config import DataArgs, PrivateConfig
+from config import DataArgs
+from config import PrivateConfig
 from src.dataset import GlueDataset
 from utils import count_trainable_parameters, save_results_to_json, train_model, evaluate, _dataset_to_tensordataset
-from config import PrivateConfig
-from opacus import PrivacyEngine
-
-
 
 
 def main(dataset_name: str, epsilon: float):
@@ -96,14 +90,14 @@ def main(dataset_name: str, epsilon: float):
             "trainable parameters": trainable_params,
             "total parameters": total_params,
             "trainable parameters ratio (%)": trainable_params / total_params * 100,
-            "configuration": configuration.model_dump()
+            "configuration": configuration.model_dump_json()
         }
     )
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run full-ft")
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
-    parser.add_argument('epsilon',
+    parser.add_argument('--epsilon',
                         type=lambda x: (float(x) if float(x) > 0 else argparse.ArgumentTypeError(f"{x} is not a positive float or int")),
                         help='Epsilon value for DP (must be > 0)', default=np.inf)
 

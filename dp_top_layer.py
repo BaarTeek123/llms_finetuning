@@ -100,14 +100,14 @@ def main(dataset_name: str, epsilon: float):
             "trainable parameters": trainable_params,
             "total parameters": total_params,
             "trainable parameters ratio (%)": trainable_params / total_params * 100,
-            "configuration": configuration.model_dump()
+            "configuration": configuration.model_dump_json()
         }
     )
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Run NoTinyBERT")
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
-    parser.add_argument('epsilon', type=lambda x: (
+    parser.add_argument('--epsilon', type=lambda x: (
         float(x) if float(x) > 0 else argparse.ArgumentTypeError(f"{x} is not a positive float or int")),
                         help='Epsilon value for DP (must be > 0)', default=np.inf)
 
