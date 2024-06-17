@@ -1,24 +1,20 @@
-import numpy as np
-import torch
 import argparse
 
-from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss
+import numpy as np
+import torch
+from opacus import PrivacyEngine
 from torch.optim import SGD
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from transformers import BertTokenizer, BertForSequenceClassification, Trainer, TrainingArguments
-
-
 from torch.utils.data import DataLoader, SequentialSampler
+from transformers import BertTokenizer, TrainingArguments
+
 from Logger import logger
-from config import DataArgs, PrivateConfig
+from config import DataArgs
+from config import PrivateConfig
 from src.dataset import GlueDataset
 from src.model import NoTinyBERT
 from utils import count_trainable_parameters, save_results_to_json, train_model, evaluate, _dataset_to_tensordataset
-from config import PrivateConfig
-from opacus import PrivacyEngine
 
-
+TASK_NAME = 'DP Top Layer Fine-Tuning'
 
 
 def main(dataset_name: str, epsilon: float):
@@ -92,7 +88,7 @@ def main(dataset_name: str, epsilon: float):
 
     save_results_to_json(
         configuration.RESULTS_PATH,
-        'NoTinyBERT',
+        TASK_NAME,
         dataset_name,
         train_results=train_results,
         eval_results=eval_results,
@@ -105,7 +101,7 @@ def main(dataset_name: str, epsilon: float):
     )
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Run NoTinyBERT")
+    parser = argparse.ArgumentParser(description=TASK_NAME)
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
     parser.add_argument('--epsilon', type=lambda x: (
         float(x) if float(x) > 0 else argparse.ArgumentTypeError(f"{x} is not a positive float or int")),
@@ -115,4 +111,5 @@ if __name__ == '__main__':
     try:
         main(args.dataset, args.epsilon)
     except Exception as ex:
-        logger.error(f"Something went wrong {ex}")
+        logger.error(f"Something went wrong while running {TASK_NAME}")
+        logger.error(f"Error: {ex}")

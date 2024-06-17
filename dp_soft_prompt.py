@@ -1,7 +1,7 @@
 import argparse
 
 import torch
-from opacus import PrivacyEngine
+from numpy import inf
 from torch.utils.data import DataLoader, SequentialSampler
 from transformers import BertTokenizer, TrainingArguments
 
@@ -14,10 +14,13 @@ from src.soft_prompt_embedding import BertForSequenceClassificationWithSoftPromp
 from utils import _dataset_to_tensordataset, evaluate, save_results_to_json, count_trainable_parameters
 
 
+TASK_NAME = 'DP Soft Prompting'
+
+
 def main(dataset_name: str, epsilon: float):
     data_args = DataArgs()
 
-    configuration = PrivateConfig(task='dp soft-prompting', dataset=dataset_name)
+    configuration = PrivateConfig(task=TASK_NAME, dataset=dataset_name)
 
     training_args = TrainingArguments(
         output_dir=configuration.MODEL_OUTPUT_DIR,
@@ -70,7 +73,7 @@ def main(dataset_name: str, epsilon: float):
 
     save_results_to_json(
         configuration.RESULTS_PATH,
-        'prompt_dpsgd',
+        TASK_NAME,
         dataset_name,
         train_results={},
         eval_results=eval_results,
@@ -85,15 +88,14 @@ def main(dataset_name: str, epsilon: float):
 
 
 if __name__ == '__main__':
-
-    parser = argparse.ArgumentParser(description="Run prompt_dpsgd")
+    parser = argparse.ArgumentParser(description=TASK_NAME)
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
-    parser.add_argument('epsilon', type=lambda x: (
+    parser.add_argument('--epsilon', type=lambda x: (
         float(x) if float(x) > 0 else argparse.ArgumentTypeError(f"{x} is not a positive float or int")),
-                        help='Epsilon value for DP (must be > 0)')
-
+                        help='Epsilon value for DP (must be > 0)', default=inf)
     args = parser.parse_args()
     try:
         main(args.dataset, args.epsilon)
     except Exception as ex:
-        logger.error(f"Something went wrong {ex}")
+        logger.error(f"Something went wrong while running {TASK_NAME}")
+        logger.error(f"Error: {ex}")

@@ -8,11 +8,13 @@ from config import DataArgs, Config
 from src.dataset import GlueDataset
 from utils import count_trainable_parameters, save_results_to_json
 
+TASK_NAME = 'LoRA'
+
 
 def main(dataset_name: str):
     data_args = DataArgs()
     configuration = Config(
-        task='lora',
+        task=TASK_NAME,
         dataset=dataset_name
     )
     # Define training arguments
@@ -82,23 +84,29 @@ def main(dataset_name: str):
     # Save evaluation results to JSON
     save_results_to_json(
         configuration.RESULTS_PATH,
-        'lora',
+        TASK_NAME,
         dataset_name,
         train_results=train_results,
         eval_results=eval_results,
         additional_comments={
             "trainable parameters": trainable_params,
             "total parameters": total_params,
-            "trainable parameters ratio (%)": trainable_params / total_params * 100
+            "trainable parameters ratio (%)": trainable_params / total_params * 100,
+            "configuration": configuration.model_dump_json()
         }
     )
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Run lora")
+    parser = argparse.ArgumentParser(description=TASK_NAME)
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
+    parser.add_argument('epsilon', type=lambda x: (
+        float(x) if float(x) > 0 else argparse.ArgumentTypeError(f"{x} is not a positive float or int")),
+                        help='Epsilon value for DP (must be > 0)')
+
     args = parser.parse_args()
     try:
         main(args.dataset)
     except Exception as ex:
-        logger.error(f"Something went wrong {ex}")
+        logger.error(f"Something went wrong while running {TASK_NAME}")
+        logger.error(f"Error: {ex}")

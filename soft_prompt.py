@@ -8,10 +8,12 @@ from src.dataset import GlueDataset
 from src.soft_prompt_embedding import BertForSequenceClassificationWithSoftPrompt
 from utils import save_results_to_json, count_trainable_parameters
 
+TASK_NAME = 'Soft Prompting'
+
 
 def main(dataset_name):
     data_args = DataArgs()
-    configuration = Config(task='soft_prompting', dataset=dataset_name)
+    configuration = Config(task=TASK_NAME, dataset=dataset_name)
 
     # debugging purpose
     base_model_parameters = set(
@@ -82,23 +84,29 @@ def main(dataset_name):
     # Save evaluation results to JSON
     save_results_to_json(
         configuration.RESULTS_PATH,
-        'soft prompt',
+        TASK_NAME,
         dataset_name,
         train_results=train_results,
         eval_results=eval_results,
         additional_comments={
             "trainable parameters": trainable_params,
             "total parameters": total_params,
-            "trainable parameters ratio (%)": trainable_params / total_params * 100
+            "trainable parameters ratio (%)": trainable_params / total_params * 100,
+            "configuration": configuration.model_dump()
         }
     )
 
-main("mnli")
+
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Run Soft prompt")
+    parser = argparse.ArgumentParser(description=TASK_NAME)
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
+    parser.add_argument('epsilon', type=lambda x: (
+        float(x) if float(x) > 0 else argparse.ArgumentTypeError(f"{x} is not a positive float or int")),
+                        help='Epsilon value for DP (must be > 0)')
+
     args = parser.parse_args()
     try:
         main(args.dataset)
     except Exception as ex:
-        logger.error(f"Something went wrong {ex}")
+        logger.error(f"Something went wrong while running {TASK_NAME}")
+        logger.error(f"Error: {ex}")

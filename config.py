@@ -22,7 +22,7 @@ class DataArgs(BaseModel):
 
 
 class Config(BaseModel):
-    EPOCHS: int = 2
+    EPOCHS: int = 21
     BATCH_SIZE: int = 32
     LR: float = 0.05
     METRIC: str = 'accuracy'

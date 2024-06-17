@@ -3,6 +3,7 @@ import argparse
 import torch
 from numpy import inf
 from opacus import PrivacyEngine
+from peft import get_peft_model, LoraConfig, TaskType
 from torch.optim import SGD
 from torch.utils.data import DataLoader, SequentialSampler
 from transformers import BertTokenizer, BertForSequenceClassification, TrainingArguments
@@ -13,13 +14,12 @@ from config import PrivateConfig
 from src.dataset import GlueDataset
 from utils import count_trainable_parameters, save_results_to_json, train_model, evaluate, _dataset_to_tensordataset
 
-TASK_NAME = 'DP Full Fine-Tuning'
-
+TASK_NAME = 'DP LoRA'
 
 def main(dataset_name: str, epsilon: float):
     data_args = DataArgs()
     privacy_engine = PrivacyEngine()
-    configuration = PrivateConfig(task='full_fine_tuning_dp', dataset=dataset_name)
+    configuration = PrivateConfig(task=TASK_NAME, dataset=dataset_name)
 
     training_args = TrainingArguments(
         output_dir=configuration.MODEL_OUTPUT_DIR,
@@ -38,6 +38,15 @@ def main(dataset_name: str, epsilon: float):
     glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
 
     model = BertForSequenceClassification.from_pretrained(configuration.MODEL_NAME, num_labels=glue_dataset.num_labels)
+
+    peft_config = LoraConfig(
+        task_type=TaskType.SEQ_CLS,
+        inference_mode=False,
+        r=8,
+        lora_alpha=32,
+        lora_dropout=0.1
+    )
+    model = get_peft_model(model, peft_config)
 
     train_dataloader = DataLoader(_dataset_to_tensordataset(glue_dataset.train_dataset),
                                   batch_size=configuration.BATCH_SIZE, shuffle=True)
@@ -84,7 +93,7 @@ def main(dataset_name: str, epsilon: float):
 
     save_results_to_json(
         configuration.RESULTS_PATH,
-        TASK_NAME,
+        'LoRA DP',
         dataset_name,
         train_results=train_results,
         eval_results=eval_results,
@@ -95,6 +104,8 @@ def main(dataset_name: str, epsilon: float):
             "configuration": configuration.model_dump_json()
         }
     )
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=TASK_NAME)
@@ -109,5 +120,4 @@ if __name__ == '__main__':
     except Exception as ex:
         logger.error(f"Something went wrong while running {TASK_NAME}")
         logger.error(f"Error: {ex}")
-
 
