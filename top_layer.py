@@ -24,8 +24,6 @@ def main(dataset_name: str):
         weight_decay=0.01,
         logging_dir='logs',
         logging_steps=10,
-        load_best_model_at_end=True
-
     )
 
     # Initialize the dataset, tokenizer and model
@@ -83,6 +81,8 @@ def main(dataset_name: str):
         }
     )
 
+for model in ['qqp', 'sst2']:
+    main(model)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=TASK_NAME)

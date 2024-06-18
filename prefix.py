@@ -13,7 +13,7 @@ TASK_NAME = 'Prefix Tuning'
 
 def main(dataset_name):
     data_args = DataArgs()
-    configuration = Config(task='prefix', dataset=dataset_name)
+    configuration = Config(task=TASK_NAME, dataset=dataset_name)
     # Define training arguments
     training_args = TrainingArguments(
         output_dir=configuration.MODEL_OUTPUT_DIR,

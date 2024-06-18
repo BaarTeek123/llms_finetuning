@@ -83,7 +83,8 @@ def main(dataset_name: str, epsilon: float):
         epochs=configuration.EPOCHS,
         privacy_engine=privacy_engine,
         delta=configuration.DELTA,
-        device=device
+        device=device,
+        logger_step=configuration.LOGGER_STEP
     )
     model.eval()
     test_eval_loss, test_eval_accuracy = evaluate(model, eval_dataloader, device)

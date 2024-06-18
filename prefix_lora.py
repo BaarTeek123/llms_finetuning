@@ -1,8 +1,8 @@
 import argparse
+
 import adapters
 from adapters import PrefixTuningConfig, LoRAConfig, AdapterTrainer
-from transformers import BertTokenizer, TrainingArguments, AutoConfig, BertForSequenceClassification, \
-    AutoModelForSequenceClassification
+from transformers import BertTokenizer, TrainingArguments, BertForSequenceClassification
 
 from Logger import logger
 from config import DataArgs, Config

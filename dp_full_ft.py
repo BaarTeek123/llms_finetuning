@@ -19,7 +19,7 @@ TASK_NAME = 'DP Full Fine-Tuning'
 def main(dataset_name: str, epsilon: float):
     data_args = DataArgs()
     privacy_engine = PrivacyEngine()
-    configuration = PrivateConfig(task='full_fine_tuning_dp', dataset=dataset_name)
+    configuration = PrivateConfig(task=TASK_NAME, dataset=dataset_name)
 
     training_args = TrainingArguments(
         output_dir=configuration.MODEL_OUTPUT_DIR,
@@ -73,7 +73,8 @@ def main(dataset_name: str, epsilon: float):
         epochs=configuration.EPOCHS,
         privacy_engine=privacy_engine,
         delta=configuration.DELTA,
-        device=device
+        device=device,
+        logger_step=configuration.LOGGER_STEP
     )
     model.eval()
     test_eval_loss, test_eval_accuracy = evaluate(model, eval_dataloader, device)

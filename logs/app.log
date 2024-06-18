@@ -1145,3 +1145,617 @@ Examples:
     {'matthews_correlation': 1.0}
 """, stored examples: 0)
 2024-06-18 08:41:21,163 - INFO - Total parameters: 4726914 || Trainable parameters: 332544 (7.035118472644097 %)
+2024-06-18 12:50:11,195 - INFO - Total parameters: 4388486 || Trainable parameters: 2179 (0.04965265925423939%)
+2024-06-18 13:03:42,168 - INFO - Train results: {'train_runtime': 810.8409, 'train_samples_per_second': 4843.145, 'train_steps_per_second': 151.349, 'train_loss': 1.0283935929292807, 'epoch': 10.0}
+2024-06-18 13:03:43,543 - INFO - Evaluation results: {'eval_loss': 1.0019688606262207, 'eval_accuracy': 0.5033112582781457, 'eval_runtime': 1.2096, 'eval_samples_per_second': 8114.007, 'eval_steps_per_second': 253.795, 'epoch': 10.0}
+2024-06-18 13:03:43,543 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 13:04:19,632 - INFO - Total parameters: 4388228 || Trainable parameters: 2050 (0.046715895345456074%)
+2024-06-18 13:07:53,438 - INFO - Train results: {'train_runtime': 213.6745, 'train_samples_per_second': 4901.988, 'train_steps_per_second': 153.224, 'train_loss': 0.604650314333385, 'epoch': 10.0}
+2024-06-18 13:07:54,140 - INFO - Evaluation results: {'eval_loss': 0.5569403171539307, 'eval_accuracy': 0.7232289950576606, 'eval_runtime': 0.6741, 'eval_samples_per_second': 8104.157, 'eval_steps_per_second': 253.672, 'epoch': 10.0}
+2024-06-18 13:07:54,140 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 13:10:00,839 - INFO - Total parameters: 4388228 || Trainable parameters: 2050 (0.046715895345456074%)
+2024-06-18 13:21:54,453 - INFO - Train results: {'train_runtime': 713.4958, 'train_samples_per_second': 5099.483, 'train_steps_per_second': 159.37, 'train_loss': 0.5626000895872142, 'epoch': 10.0}
+2024-06-18 13:21:59,098 - INFO - Evaluation results: {'eval_loss': 0.547855019569397, 'eval_accuracy': 0.6924066287410339, 'eval_f1': 0.6338260408692068, 'eval_runtime': 4.5533, 'eval_samples_per_second': 8879.239, 'eval_steps_per_second': 277.6, 'epoch': 10.0}
+2024-06-18 13:21:59,099 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 13:22:13,298 - INFO - Total parameters: 4388228 || Trainable parameters: 2050 (0.046715895345456074%)
+2024-06-18 13:24:25,771 - INFO - Train results: {'train_runtime': 132.3675, 'train_samples_per_second': 5088.032, 'train_steps_per_second': 159.027, 'train_loss': 0.6066830699177649, 'epoch': 10.0}
+2024-06-18 13:24:25,893 - INFO - Evaluation results: {'eval_loss': 0.5753700733184814, 'eval_accuracy': 0.6892201834862385, 'eval_runtime': 0.1031, 'eval_samples_per_second': 8459.407, 'eval_steps_per_second': 271.632, 'epoch': 10.0}
+2024-06-18 13:24:25,893 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 13:25:56,892 - INFO - Total parameters count: 4386307
+2024-06-18 13:25:56,892 - INFO - Trainable parameters count: 4386307 (100.0%)
+2024-06-18 13:38:42,631 - INFO - Train results: {'train_runtime': 765.6387, 'train_samples_per_second': 5129.077, 'train_steps_per_second': 160.284, 'train_loss': 0.7175415371201029, 'epoch': 10.0}
+2024-06-18 13:38:43,793 - INFO - Evaluation results: {'eval_loss': 0.7558501958847046, 'eval_accuracy': 0.6882322975038206, 'eval_runtime': 1.0629, 'eval_samples_per_second': 9234.537, 'eval_steps_per_second': 288.844, 'epoch': 10.0}
+2024-06-18 13:38:43,794 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 13:39:19,190 - INFO - Total parameters count: 4386178
+2024-06-18 13:39:19,190 - INFO - Trainable parameters count: 4386178 (100.0%)
+2024-06-18 13:42:46,203 - INFO - Train results: {'train_runtime': 206.8967, 'train_samples_per_second': 5062.575, 'train_steps_per_second': 158.243, 'train_loss': 0.41769370360569613, 'epoch': 10.0}
+2024-06-18 13:42:46,812 - INFO - Evaluation results: {'eval_loss': 0.5181419253349304, 'eval_accuracy': 0.7741167856489108, 'eval_runtime': 0.582, 'eval_samples_per_second': 9387.105, 'eval_steps_per_second': 293.83, 'epoch': 10.0}
+2024-06-18 13:42:46,813 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 13:44:52,944 - INFO - Total parameters count: 4386178
+2024-06-18 13:44:52,944 - INFO - Trainable parameters count: 4386178 (100.0%)
+2024-06-18 13:56:59,945 - INFO - Train results: {'train_runtime': 726.885, 'train_samples_per_second': 5005.551, 'train_steps_per_second': 156.435, 'train_loss': 0.3560644319971427, 'epoch': 10.0}
+2024-06-18 13:57:04,576 - INFO - Evaluation results: {'eval_loss': 0.4050644040107727, 'eval_accuracy': 0.8208013851100667, 'eval_f1': 0.7717607031471505, 'eval_runtime': 4.5384, 'eval_samples_per_second': 8908.34, 'eval_steps_per_second': 278.51, 'epoch': 10.0}
+2024-06-18 13:57:04,576 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 13:57:18,834 - INFO - Total parameters count: 4386178
+2024-06-18 13:57:18,834 - INFO - Trainable parameters count: 4386178 (100.0%)
+2024-06-18 13:59:33,319 - INFO - Train results: {'train_runtime': 134.3695, 'train_samples_per_second': 5012.223, 'train_steps_per_second': 156.658, 'train_loss': 0.20479774414218804, 'epoch': 10.0}
+2024-06-18 13:59:33,437 - INFO - Evaluation results: {'eval_loss': 0.6750989556312561, 'eval_accuracy': 0.823394495412844, 'eval_runtime': 0.0994, 'eval_samples_per_second': 8771.433, 'eval_steps_per_second': 281.652, 'epoch': 10.0}
+2024-06-18 13:59:33,437 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:01:04,169 - INFO - New Parameters Added by Adapters: {'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.model.bert.embeddings.word_embeddings.weight', 'base_model.model.classifier.original_module.weight', 'base_model.model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.model.bert.embeddings.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.bias', 'base_model.model.bert.pooler.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.model.classifier.original_module.bias', 'base_model.model.bert.encoder.layer.0.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.weight', 'base_model.model.bert.embeddings.position_embeddings.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_B.default.weight', 'base_model.model.bert.pooler.dense.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.model.bert.embeddings.token_type_embeddings.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.model.classifier.modules_to_save.default.bias', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.output.dense.weight', 'base_model.model.classifier.modules_to_save.default.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.model.bert.embeddings.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.output.dense.bias', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.model.bert.encoder.layer.0.output.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_A.default.weight'}
+2024-06-18 14:01:04,169 - INFO - Total parameters: 4394886 || Trainable parameters: 8579 (0.19520415319077672%)
+2024-06-18 14:14:00,542 - INFO - Train results: {'train_runtime': 776.2649, 'train_samples_per_second': 5058.866, 'train_steps_per_second': 158.09, 'train_loss': 0.9378113804382637, 'epoch': 10.0}
+2024-06-18 14:14:01,752 - INFO - Evaluation results: {'eval_loss': 0.892228364944458, 'eval_accuracy': 0.5922567498726439, 'eval_runtime': 1.1103, 'eval_samples_per_second': 8840.222, 'eval_steps_per_second': 276.51, 'epoch': 10.0}
+2024-06-18 14:14:01,753 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:14:37,724 - INFO - New Parameters Added by Adapters: {'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.output.dense.weight', 'base_model.model.bert.pooler.dense.weight', 'base_model.model.bert.embeddings.position_embeddings.weight', 'base_model.model.bert.embeddings.token_type_embeddings.weight', 'base_model.model.bert.encoder.layer.0.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.0.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.model.bert.embeddings.word_embeddings.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.model.classifier.original_module.weight', 'base_model.model.classifier.original_module.bias', 'base_model.model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.model.bert.pooler.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_B.default.weight', 'base_model.model.bert.embeddings.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.bias', 'base_model.model.classifier.modules_to_save.default.bias', 'base_model.model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_B.default.weight', 'base_model.model.classifier.modules_to_save.default.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.bias', 'base_model.model.bert.embeddings.LayerNorm.weight'}
+2024-06-18 14:14:37,724 - INFO - Total parameters: 4394628 || Trainable parameters: 8450 (0.1922802112033146%)
+2024-06-18 14:17:58,269 - INFO - Train results: {'train_runtime': 200.3942, 'train_samples_per_second': 5226.849, 'train_steps_per_second': 163.378, 'train_loss': 0.5494717018591171, 'epoch': 10.0}
+2024-06-18 14:17:58,954 - INFO - Evaluation results: {'eval_loss': 0.4978960454463959, 'eval_accuracy': 0.7614863628043199, 'eval_runtime': 0.6577, 'eval_samples_per_second': 8305.802, 'eval_steps_per_second': 259.984, 'epoch': 10.0}
+2024-06-18 14:17:58,955 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:20:04,616 - INFO - New Parameters Added by Adapters: {'base_model.model.bert.encoder.layer.1.output.dense.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.model.bert.embeddings.token_type_embeddings.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_B.default.weight', 'base_model.model.classifier.modules_to_save.default.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_A.default.weight', 'base_model.model.classifier.original_module.weight', 'base_model.model.bert.embeddings.word_embeddings.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_B.default.weight', 'base_model.model.bert.pooler.dense.bias', 'base_model.model.classifier.original_module.bias', 'base_model.model.classifier.modules_to_save.default.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.0.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.model.bert.encoder.layer.0.output.dense.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.model.bert.pooler.dense.weight', 'base_model.model.bert.embeddings.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.model.bert.embeddings.position_embeddings.weight', 'base_model.model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.bias', 'base_model.model.bert.embeddings.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.weight'}
+2024-06-18 14:20:04,616 - INFO - Total parameters: 4394628 || Trainable parameters: 8450 (0.1922802112033146%)
+2024-06-18 14:31:43,989 - INFO - Train results: {'train_runtime': 699.2638, 'train_samples_per_second': 5203.272, 'train_steps_per_second': 162.614, 'train_loss': 0.5279605703569425, 'epoch': 10.0}
+2024-06-18 14:31:48,605 - INFO - Evaluation results: {'eval_loss': 0.5115140080451965, 'eval_accuracy': 0.7202819688350235, 'eval_f1': 0.6653845015829808, 'eval_runtime': 4.524, 'eval_samples_per_second': 8936.868, 'eval_steps_per_second': 279.401, 'epoch': 10.0}
+2024-06-18 14:31:48,606 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:32:03,012 - INFO - New Parameters Added by Adapters: {'base_model.model.bert.encoder.layer.1.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.model.classifier.modules_to_save.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_B.default.weight', 'base_model.model.classifier.modules_to_save.default.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.model.bert.embeddings.position_embeddings.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.model.bert.embeddings.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.1.output.dense.weight', 'base_model.model.bert.encoder.layer.0.output.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_A.default.weight', 'base_model.model.bert.embeddings.token_type_embeddings.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_B.default.weight', 'base_model.model.classifier.original_module.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.model.bert.pooler.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.weight', 'base_model.model.classifier.original_module.weight', 'base_model.model.bert.pooler.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.model.bert.embeddings.word_embeddings.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.model.bert.embeddings.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.bias'}
+2024-06-18 14:32:03,012 - INFO - Total parameters: 4394628 || Trainable parameters: 8450 (0.1922802112033146%)
+2024-06-18 14:34:09,727 - INFO - Train results: {'train_runtime': 126.6008, 'train_samples_per_second': 5319.794, 'train_steps_per_second': 166.271, 'train_loss': 0.5052224590319636, 'epoch': 10.0}
+2024-06-18 14:34:09,847 - INFO - Evaluation results: {'eval_loss': 0.49291303753852844, 'eval_accuracy': 0.7545871559633027, 'eval_runtime': 0.102, 'eval_samples_per_second': 8550.839, 'eval_steps_per_second': 274.568, 'epoch': 10.0}
+2024-06-18 14:34:09,848 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:34:44,576 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 14:34:44,870 - INFO - Total parameters: 4726914 || Trainable parameters: 332544 (7.035118472644097 %)
+2024-06-18 14:38:02,390 - INFO - Train results: {'train_runtime': 197.4086, 'train_samples_per_second': 5305.899, 'train_steps_per_second': 165.849, 'train_loss': 0.6269367396139706, 'epoch': 10.0}
+2024-06-18 14:38:03,129 - INFO - Evaluation results: {'eval_loss': 0.5786020755767822, 'eval_accuracy': 0.7138934651290499, 'eval_runtime': 0.7119, 'eval_samples_per_second': 7673.494, 'eval_steps_per_second': 240.192, 'epoch': 10.0}
+2024-06-18 14:38:03,130 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:39:30,459 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 14:39:30,730 - INFO - Total parameters: 4727043 || Trainable parameters: 332544 (7.034926485754414 %)
+2024-06-18 14:52:09,525 - INFO - Train results: {'train_runtime': 758.7175, 'train_samples_per_second': 5175.866, 'train_steps_per_second': 161.747, 'train_loss': 1.0147753652724325, 'epoch': 10.0}
+2024-06-18 14:52:10,839 - INFO - Evaluation results: {'eval_loss': 0.9788184762001038, 'eval_accuracy': 0.5622007131940907, 'eval_runtime': 1.212, 'eval_samples_per_second': 8098.332, 'eval_steps_per_second': 253.305, 'epoch': 10.0}
+2024-06-18 14:52:10,840 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:52:19,165 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 14:52:19,441 - INFO - Total parameters: 4726914 || Trainable parameters: 332544 (7.035118472644097 %)
+2024-06-18 14:55:36,461 - INFO - Train results: {'train_runtime': 196.9166, 'train_samples_per_second': 5319.157, 'train_steps_per_second': 166.263, 'train_loss': 0.6222268588672561, 'epoch': 10.0}
+2024-06-18 14:55:37,168 - INFO - Evaluation results: {'eval_loss': 0.5785854458808899, 'eval_accuracy': 0.7257916895478674, 'eval_runtime': 0.6783, 'eval_samples_per_second': 8054.175, 'eval_steps_per_second': 252.108, 'epoch': 10.0}
+2024-06-18 14:55:37,168 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:55:42,029 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 14:55:42,297 - INFO - Total parameters: 4726914 || Trainable parameters: 332544 (7.035118472644097 %)
+2024-06-18 14:59:02,330 - INFO - Train results: {'train_runtime': 199.9693, 'train_samples_per_second': 5237.955, 'train_steps_per_second': 163.725, 'train_loss': 0.6290298282918073, 'epoch': 10.0}
+2024-06-18 14:59:03,033 - INFO - Evaluation results: {'eval_loss': 0.5835501551628113, 'eval_accuracy': 0.7181036060772469, 'eval_runtime': 0.6748, 'eval_samples_per_second': 8095.744, 'eval_steps_per_second': 253.409, 'epoch': 10.0}
+2024-06-18 14:59:03,034 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 14:59:11,095 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 14:59:11,397 - INFO - Total parameters: 4726914 || Trainable parameters: 332544 (7.035118472644097 %)
+2024-06-18 15:02:29,397 - INFO - Train results: {'train_runtime': 197.8983, 'train_samples_per_second': 5292.769, 'train_steps_per_second': 165.439, 'train_loss': 0.6255393309060145, 'epoch': 10.0}
+2024-06-18 15:02:30,108 - INFO - Evaluation results: {'eval_loss': 0.5726837515830994, 'eval_accuracy': 0.7201171517481237, 'eval_runtime': 0.6835, 'eval_samples_per_second': 7992.414, 'eval_steps_per_second': 250.174, 'epoch': 10.0}
+2024-06-18 15:02:30,109 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 15:04:32,386 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 15:04:32,669 - INFO - Total parameters: 4726914 || Trainable parameters: 332544 (7.035118472644097 %)
+2024-06-18 15:16:12,514 - INFO - Train results: {'train_runtime': 699.7747, 'train_samples_per_second': 5199.474, 'train_steps_per_second': 162.495, 'train_loss': 0.5946219645225009, 'epoch': 10.0}
+2024-06-18 15:16:17,752 - INFO - Evaluation results: {'eval_loss': 0.5718391537666321, 'eval_accuracy': 0.7044768736087064, 'eval_f1': 0.6153994720916758, 'eval_runtime': 5.1435, 'eval_samples_per_second': 7860.432, 'eval_steps_per_second': 245.748, 'epoch': 10.0}
+2024-06-18 15:16:17,753 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 15:16:26,170 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 15:16:26,464 - INFO - Total parameters: 4726914 || Trainable parameters: 332544 (7.035118472644097 %)
+2024-06-18 15:19:48,828 - INFO - Train results: {'train_runtime': 202.2537, 'train_samples_per_second': 5178.792, 'train_steps_per_second': 161.876, 'train_loss': 0.6119224697770181, 'epoch': 10.0}
+2024-06-18 15:19:49,550 - INFO - Evaluation results: {'eval_loss': 0.5661758184432983, 'eval_accuracy': 0.7446457990115322, 'eval_runtime': 0.6942, 'eval_samples_per_second': 7869.946, 'eval_steps_per_second': 246.341, 'epoch': 10.0}
+2024-06-18 15:19:49,551 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 15:20:00,570 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 15:20:00,874 - INFO - Total parameters: 4726914 || Trainable parameters: 332544 (7.035118472644097 %)
+2024-06-18 15:22:11,561 - INFO - Train results: {'train_runtime': 130.6222, 'train_samples_per_second': 5156.016, 'train_steps_per_second': 161.152, 'train_loss': 0.5977252288102537, 'epoch': 10.0}
+2024-06-18 15:22:11,694 - INFO - Evaluation results: {'eval_loss': 0.5817530155181885, 'eval_accuracy': 0.7098623853211009, 'eval_runtime': 0.1134, 'eval_samples_per_second': 7692.393, 'eval_steps_per_second': 247.003, 'epoch': 10.0}
+2024-06-18 15:22:11,694 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 15:22:13,645 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 15:22:13,645 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 15:22:15,547 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 15:22:15,547 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 15:22:17,444 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 15:22:17,444 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 15:22:19,353 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 15:22:19,353 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 15:23:51,604 - INFO - New Parameters Added by Adapters: {'bert.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'bert.bert.encoder.layer.0.intermediate.dense.weight', 'bert.bert.encoder.layer.0.output.dense.weight', 'bert.bert.embeddings.LayerNorm.weight', 'bert.bert.embeddings.word_embeddings.weight', 'bert.bert.encoder.layer.0.output.LayerNorm.weight', 'bert.bert.encoder.layer.0.attention.self.query.bias', 'bert.bert.encoder.layer.0.attention.output.dense.bias', 'bert.bert.encoder.layer.0.attention.self.key.bias', 'bert.bert.encoder.layer.1.intermediate.dense.bias', 'bert.classifier.weight', 'bert.bert.encoder.layer.0.output.dense.bias', 'bert.bert.embeddings.LayerNorm.bias', 'bert.bert.encoder.layer.1.attention.self.query.bias', 'bert.bert.encoder.layer.1.output.dense.bias', 'bert.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'bert.bert.encoder.layer.1.attention.self.value.bias', 'bert.bert.embeddings.token_type_embeddings.weight', 'bert.bert.encoder.layer.0.attention.output.dense.weight', 'soft_prompt.soft_prompts', 'bert.bert.encoder.layer.0.attention.self.value.bias', 'bert.bert.encoder.layer.0.attention.self.query.weight', 'bert.bert.encoder.layer.0.attention.self.value.weight', 'bert.bert.encoder.layer.1.output.LayerNorm.weight', 'bert.bert.encoder.layer.1.output.LayerNorm.bias', 'bert.bert.encoder.layer.1.attention.output.dense.weight', 'bert.bert.encoder.layer.1.attention.self.key.bias', 'bert.bert.encoder.layer.1.attention.self.key.weight', 'bert.bert.encoder.layer.0.attention.self.key.weight', 'bert.bert.encoder.layer.1.attention.self.value.weight', 'bert.bert.encoder.layer.1.attention.output.dense.bias', 'bert.bert.encoder.layer.1.output.dense.weight', 'bert.bert.encoder.layer.0.output.LayerNorm.bias', 'bert.bert.pooler.dense.weight', 'bert.bert.encoder.layer.0.intermediate.dense.bias', 'bert.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'bert.bert.embeddings.position_embeddings.weight', 'bert.bert.encoder.layer.1.attention.self.query.weight', 'bert.bert.encoder.layer.1.intermediate.dense.weight', 'bert.classifier.bias', 'bert.bert.pooler.dense.bias', 'bert.bert.encoder.layer.0.attention.output.LayerNorm.weight'}
+2024-06-18 15:23:51,604 - INFO - Total parameters count: 4392707
+2024-06-18 15:23:51,604 - INFO - Trainable parameters count: 6400 (0.1456960366352684%)
+2024-06-18 15:23:51,659 - INFO - Unique labels: {0, 1, 2}
+2024-06-18 15:35:47,152 - INFO - Train results: {'train_runtime': 715.3811, 'train_samples_per_second': 5489.41, 'train_steps_per_second': 171.545, 'train_loss': 1.1012963732886656, 'epoch': 10.0}
+2024-06-18 15:35:48,449 - INFO - Evaluation results: {'eval_loss': 1.0983190536499023, 'eval_accuracy': 0.33306164034640856, 'eval_runtime': 1.1965, 'eval_samples_per_second': 8203.383, 'eval_steps_per_second': 256.591, 'epoch': 10.0}
+2024-06-18 15:35:48,450 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 15:36:24,680 - INFO - New Parameters Added by Adapters: {'bert.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'bert.bert.encoder.layer.1.attention.self.key.weight', 'bert.bert.embeddings.LayerNorm.bias', 'bert.bert.encoder.layer.0.output.LayerNorm.weight', 'bert.bert.encoder.layer.0.output.dense.weight', 'bert.bert.encoder.layer.1.attention.output.dense.bias', 'bert.classifier.bias', 'bert.bert.encoder.layer.0.attention.output.dense.bias', 'bert.bert.encoder.layer.1.attention.output.dense.weight', 'bert.bert.encoder.layer.0.attention.self.key.weight', 'bert.bert.embeddings.LayerNorm.weight', 'bert.bert.embeddings.position_embeddings.weight', 'bert.bert.encoder.layer.0.intermediate.dense.weight', 'bert.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'bert.bert.encoder.layer.0.intermediate.dense.bias', 'bert.bert.encoder.layer.1.output.dense.bias', 'bert.bert.encoder.layer.0.attention.self.value.bias', 'bert.classifier.weight', 'bert.bert.encoder.layer.1.attention.self.value.weight', 'bert.bert.encoder.layer.1.intermediate.dense.weight', 'bert.bert.encoder.layer.1.intermediate.dense.bias', 'bert.bert.encoder.layer.0.attention.self.query.weight', 'bert.bert.encoder.layer.1.output.LayerNorm.bias', 'bert.bert.encoder.layer.0.output.dense.bias', 'bert.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'bert.bert.pooler.dense.bias', 'bert.bert.encoder.layer.1.attention.self.query.weight', 'bert.bert.encoder.layer.1.attention.self.value.bias', 'soft_prompt.soft_prompts', 'bert.bert.embeddings.token_type_embeddings.weight', 'bert.bert.encoder.layer.0.attention.self.value.weight', 'bert.bert.encoder.layer.1.attention.self.key.bias', 'bert.bert.encoder.layer.0.attention.output.dense.weight', 'bert.bert.encoder.layer.1.output.dense.weight', 'bert.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'bert.bert.encoder.layer.0.attention.self.query.bias', 'bert.bert.encoder.layer.0.attention.self.key.bias', 'bert.bert.encoder.layer.1.output.LayerNorm.weight', 'bert.bert.encoder.layer.0.output.LayerNorm.bias', 'bert.bert.embeddings.word_embeddings.weight', 'bert.bert.pooler.dense.weight', 'bert.bert.encoder.layer.1.attention.self.query.bias'}
+2024-06-18 15:36:24,680 - INFO - Total parameters count: 4392578
+2024-06-18 15:36:24,680 - INFO - Trainable parameters count: 6400 (0.14570031539565148%)
+2024-06-18 15:36:24,695 - INFO - Unique labels: {0, 1}
+2024-06-18 15:39:32,172 - INFO - Train results: {'train_runtime': 187.3772, 'train_samples_per_second': 5589.953, 'train_steps_per_second': 174.728, 'train_loss': 0.6951195806865658, 'epoch': 10.0}
+2024-06-18 15:39:32,848 - INFO - Evaluation results: {'eval_loss': 0.6941783428192139, 'eval_accuracy': 0.4693391909207395, 'eval_runtime': 0.647, 'eval_samples_per_second': 8443.015, 'eval_steps_per_second': 264.279, 'epoch': 10.0}
+2024-06-18 15:39:32,848 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 15:41:38,263 - INFO - New Parameters Added by Adapters: {'bert.bert.encoder.layer.0.attention.self.key.bias', 'bert.bert.embeddings.token_type_embeddings.weight', 'bert.bert.embeddings.LayerNorm.weight', 'bert.bert.embeddings.position_embeddings.weight', 'bert.bert.encoder.layer.0.attention.output.dense.bias', 'bert.bert.encoder.layer.0.output.dense.weight', 'bert.bert.encoder.layer.1.attention.self.value.bias', 'bert.bert.encoder.layer.1.intermediate.dense.weight', 'bert.bert.encoder.layer.0.attention.self.value.weight', 'bert.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'bert.bert.pooler.dense.bias', 'bert.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'bert.bert.encoder.layer.0.intermediate.dense.bias', 'bert.bert.encoder.layer.1.attention.self.value.weight', 'bert.bert.encoder.layer.0.attention.output.dense.weight', 'bert.bert.encoder.layer.0.output.dense.bias', 'bert.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'bert.bert.embeddings.word_embeddings.weight', 'bert.bert.encoder.layer.1.intermediate.dense.bias', 'bert.bert.encoder.layer.1.output.dense.weight', 'bert.bert.encoder.layer.0.intermediate.dense.weight', 'bert.bert.encoder.layer.1.output.LayerNorm.bias', 'bert.bert.embeddings.LayerNorm.bias', 'bert.bert.pooler.dense.weight', 'bert.classifier.weight', 'bert.bert.encoder.layer.1.attention.self.query.weight', 'bert.bert.encoder.layer.0.output.LayerNorm.bias', 'bert.bert.encoder.layer.0.attention.self.key.weight', 'bert.bert.encoder.layer.1.attention.output.dense.weight', 'bert.bert.encoder.layer.0.output.LayerNorm.weight', 'bert.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'bert.bert.encoder.layer.1.attention.self.query.bias', 'bert.bert.encoder.layer.0.attention.self.query.bias', 'bert.bert.encoder.layer.1.attention.output.dense.bias', 'bert.bert.encoder.layer.1.output.dense.bias', 'bert.classifier.bias', 'bert.bert.encoder.layer.0.attention.self.value.bias', 'bert.bert.encoder.layer.1.attention.self.key.bias', 'bert.bert.encoder.layer.1.attention.self.key.weight', 'bert.bert.encoder.layer.0.attention.self.query.weight', 'bert.bert.encoder.layer.1.output.LayerNorm.weight', 'soft_prompt.soft_prompts'}
+2024-06-18 15:41:38,263 - INFO - Total parameters count: 4392578
+2024-06-18 15:41:38,263 - INFO - Trainable parameters count: 6400 (0.14570031539565148%)
+2024-06-18 15:41:38,314 - INFO - Unique labels: {0, 1}
+2024-06-18 15:52:34,627 - INFO - Train results: {'train_runtime': 656.2012, 'train_samples_per_second': 5544.732, 'train_steps_per_second': 173.285, 'train_loss': 0.660270503890115, 'epoch': 10.0}
+2024-06-18 15:52:39,569 - INFO - Evaluation results: {'eval_loss': 0.6570406556129456, 'eval_accuracy': 0.6318327974276527, 'eval_f1': 0.0, 'eval_runtime': 4.851, 'eval_samples_per_second': 8334.322, 'eval_steps_per_second': 260.564, 'epoch': 10.0}
+2024-06-18 15:52:39,570 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 15:52:54,862 - INFO - New Parameters Added by Adapters: {'bert.bert.encoder.layer.1.output.LayerNorm.bias', 'bert.bert.encoder.layer.1.attention.output.dense.weight', 'bert.bert.encoder.layer.1.attention.self.query.bias', 'bert.bert.encoder.layer.0.output.LayerNorm.bias', 'bert.bert.pooler.dense.bias', 'bert.bert.encoder.layer.0.intermediate.dense.weight', 'bert.bert.embeddings.word_embeddings.weight', 'bert.classifier.bias', 'bert.bert.encoder.layer.0.attention.self.key.weight', 'bert.bert.encoder.layer.0.attention.self.query.bias', 'bert.bert.encoder.layer.0.output.dense.bias', 'soft_prompt.soft_prompts', 'bert.bert.encoder.layer.0.output.dense.weight', 'bert.bert.pooler.dense.weight', 'bert.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'bert.bert.encoder.layer.1.output.dense.weight', 'bert.bert.encoder.layer.0.attention.self.value.bias', 'bert.classifier.weight', 'bert.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'bert.bert.embeddings.position_embeddings.weight', 'bert.bert.embeddings.LayerNorm.weight', 'bert.bert.encoder.layer.1.attention.self.key.bias', 'bert.bert.encoder.layer.0.attention.self.key.bias', 'bert.bert.encoder.layer.0.attention.output.dense.weight', 'bert.bert.embeddings.token_type_embeddings.weight', 'bert.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'bert.bert.encoder.layer.1.attention.self.key.weight', 'bert.bert.encoder.layer.1.output.LayerNorm.weight', 'bert.bert.encoder.layer.1.attention.self.query.weight', 'bert.bert.encoder.layer.1.attention.self.value.weight', 'bert.bert.encoder.layer.1.intermediate.dense.bias', 'bert.bert.encoder.layer.1.attention.self.value.bias', 'bert.bert.encoder.layer.1.attention.output.dense.bias', 'bert.bert.embeddings.LayerNorm.bias', 'bert.bert.encoder.layer.0.output.LayerNorm.weight', 'bert.bert.encoder.layer.0.attention.output.dense.bias', 'bert.bert.encoder.layer.0.intermediate.dense.bias', 'bert.bert.encoder.layer.0.attention.self.value.weight', 'bert.bert.encoder.layer.0.attention.self.query.weight', 'bert.bert.encoder.layer.1.intermediate.dense.weight', 'bert.bert.encoder.layer.1.output.dense.bias', 'bert.bert.encoder.layer.1.attention.output.LayerNorm.weight'}
+2024-06-18 15:52:54,862 - INFO - Total parameters count: 4392578
+2024-06-18 15:52:54,862 - INFO - Trainable parameters count: 6400 (0.14570031539565148%)
+2024-06-18 15:52:54,874 - INFO - Unique labels: {0, 1}
+2024-06-18 15:55:09,962 - INFO - Train results: {'train_runtime': 134.9756, 'train_samples_per_second': 4989.716, 'train_steps_per_second': 155.954, 'train_loss': 0.6877538723843681, 'epoch': 10.0}
+2024-06-18 15:55:10,324 - INFO - Evaluation results: {'eval_loss': 0.6982190608978271, 'eval_accuracy': 0.5091743119266054, 'eval_runtime': 0.3094, 'eval_samples_per_second': 2818.67, 'eval_steps_per_second': 90.508, 'epoch': 10.0}
+2024-06-18 15:55:10,326 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 15:56:46,063 - INFO - Total parameters count: 4401286
+2024-06-18 15:56:46,063 - INFO - Trainable parameters count: 14979 (0.3403323483181961%)
+2024-06-18 15:56:46,116 - INFO - Unique labels: {0, 1, 2}
+2024-06-18 16:07:57,658 - INFO - Train results: {'train_runtime': 671.4434, 'train_samples_per_second': 5848.624, 'train_steps_per_second': 182.77, 'train_loss': 1.0461094868773744, 'epoch': 10.0}
+2024-06-18 16:07:58,673 - INFO - Evaluation results: {'eval_loss': 1.0232281684875488, 'eval_accuracy': 0.4761079979623026, 'eval_runtime': 0.914, 'eval_samples_per_second': 10739.047, 'eval_steps_per_second': 335.903, 'epoch': 10.0}
+2024-06-18 16:07:58,674 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 16:08:34,721 - INFO - Total parameters count: 4401028
+2024-06-18 16:08:34,721 - INFO - Trainable parameters count: 14850 (0.33742116614572776%)
+2024-06-18 16:08:34,736 - INFO - Unique labels: {0, 1}
+2024-06-18 16:11:29,927 - INFO - Train results: {'train_runtime': 175.0721, 'train_samples_per_second': 5982.849, 'train_steps_per_second': 187.009, 'train_loss': 0.6686732955727551, 'epoch': 10.0}
+2024-06-18 16:11:30,466 - INFO - Evaluation results: {'eval_loss': 0.6511533260345459, 'eval_accuracy': 0.6203551162365001, 'eval_runtime': 0.5124, 'eval_samples_per_second': 10660.895, 'eval_steps_per_second': 333.702, 'epoch': 10.0}
+2024-06-18 16:11:30,467 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 16:13:34,685 - INFO - Total parameters count: 4401028
+2024-06-18 16:13:34,685 - INFO - Trainable parameters count: 14850 (0.33742116614572776%)
+2024-06-18 16:13:34,735 - INFO - Unique labels: {0, 1}
+2024-06-18 16:23:54,006 - INFO - Train results: {'train_runtime': 619.1588, 'train_samples_per_second': 5876.457, 'train_steps_per_second': 183.652, 'train_loss': 0.5673989644519006, 'epoch': 10.0}
+2024-06-18 16:23:57,920 - INFO - Evaluation results: {'eval_loss': 0.534538209438324, 'eval_accuracy': 0.7134306208261192, 'eval_f1': 0.6430244022676855, 'eval_runtime': 3.8218, 'eval_samples_per_second': 10578.824, 'eval_steps_per_second': 330.735, 'epoch': 10.0}
+2024-06-18 16:23:57,921 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 16:24:12,532 - INFO - Total parameters count: 4401028
+2024-06-18 16:24:12,532 - INFO - Trainable parameters count: 14850 (0.33742116614572776%)
+2024-06-18 16:24:12,542 - INFO - Unique labels: {0, 1}
+2024-06-18 16:26:04,990 - INFO - Train results: {'train_runtime': 112.3293, 'train_samples_per_second': 5995.673, 'train_steps_per_second': 187.395, 'train_loss': 0.5385496367411489, 'epoch': 10.0}
+2024-06-18 16:26:05,093 - INFO - Evaluation results: {'eval_loss': 0.514143705368042, 'eval_accuracy': 0.7431192660550459, 'eval_runtime': 0.0851, 'eval_samples_per_second': 10246.575, 'eval_steps_per_second': 329.018, 'epoch': 10.0}
+2024-06-18 16:26:05,094 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 16:35:36,786 - INFO - Total parameters: 4392707 || Trainable parameters: 6400 (0.1456960366352684%)
+2024-06-18 16:40:35,405 - INFO - Training finished
+2024-06-18 16:40:35,405 - INFO - epsilon: inf, delta: 1e-05
+2024-06-18 16:40:35,790 - INFO - Evaluation finished
+2024-06-18 16:40:35,790 - INFO - Evaluation results: {'loss': nan, 'accuracy': 0.3544513879053959}.
+2024-06-18 16:40:35,790 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-18 16:41:12,142 - INFO - Total parameters: 4392578 || Trainable parameters: 6400 (0.14570031539565148%)
+2024-06-18 16:42:31,782 - INFO - Training finished
+2024-06-18 16:42:31,782 - INFO - epsilon: inf, delta: 1e-05
+2024-06-18 16:42:31,997 - INFO - Evaluation finished
+2024-06-18 16:42:31,997 - INFO - Evaluation results: {'loss': nan, 'accuracy': 0.49471618357487923}.
+2024-06-18 16:42:31,997 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-18 16:44:37,961 - INFO - Total parameters: 4392578 || Trainable parameters: 6400 (0.14570031539565148%)
+2024-06-18 16:49:14,533 - INFO - Training finished
+2024-06-18 16:49:14,533 - INFO - epsilon: inf, delta: 1e-05
+2024-06-18 16:49:16,150 - INFO - Evaluation finished
+2024-06-18 16:49:16,150 - INFO - Evaluation results: {'loss': nan, 'accuracy': 0.6316469823688969}.
+2024-06-18 16:49:16,150 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-18 16:49:30,498 - INFO - Total parameters: 4392578 || Trainable parameters: 6400 (0.14570031539565148%)
+2024-06-18 16:50:21,958 - INFO - Training finished
+2024-06-18 16:50:21,959 - INFO - epsilon: inf, delta: 1e-05
+2024-06-18 16:50:21,995 - INFO - Evaluation finished
+2024-06-18 16:50:21,995 - INFO - Evaluation results: {'loss': nan, 'accuracy': 0.49107142857142855}.
+2024-06-18 16:50:21,995 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-18 16:55:35,309 - INFO - Total parameters: 4392707 || Trainable parameters: 6400 (0.1456960366352684%)
+2024-06-18 17:00:33,451 - INFO - Training finished
+2024-06-18 17:00:33,451 - INFO - epsilon: 8.0, delta: 1e-05
+2024-06-18 17:00:33,839 - INFO - Evaluation finished
+2024-06-18 17:00:33,839 - INFO - Evaluation results: {'loss': 1.1134303070434919, 'accuracy': 0.3181737714204787}.
+2024-06-18 17:00:33,839 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-18 17:00:43,025 - INFO - Total parameters: 4392578 || Trainable parameters: 6400 (0.14570031539565148%)
+2024-06-18 17:02:02,637 - INFO - Training finished
+2024-06-18 17:02:02,637 - INFO - epsilon: 8.0, delta: 1e-05
+2024-06-18 17:02:02,853 - INFO - Evaluation finished
+2024-06-18 17:02:02,853 - INFO - Evaluation results: {'loss': 0.7035641370461001, 'accuracy': 0.49471618357487923}.
+2024-06-18 17:02:02,853 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-18 17:02:12,450 - INFO - Total parameters: 4392578 || Trainable parameters: 6400 (0.14570031539565148%)
+2024-06-18 17:06:49,183 - INFO - Training finished
+2024-06-18 17:06:49,183 - INFO - epsilon: 8.0, delta: 1e-05
+2024-06-18 17:06:50,780 - INFO - Evaluation finished
+2024-06-18 17:06:50,780 - INFO - Evaluation results: {'loss': 0.6834821456312379, 'accuracy': 0.6314491975587704}.
+2024-06-18 17:06:50,780 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-18 17:06:59,768 - INFO - Total parameters: 4392578 || Trainable parameters: 6400 (0.14570031539565148%)
+2024-06-18 17:07:51,005 - INFO - Training finished
+2024-06-18 17:07:51,005 - INFO - epsilon: 8.0, delta: 1e-05
+2024-06-18 17:07:51,041 - INFO - Evaluation finished
+2024-06-18 17:07:51,041 - INFO - Evaluation results: {'loss': 0.7009874113968441, 'accuracy': 0.5089285714285714}.
+2024-06-18 17:07:51,041 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-18 21:19:50,633 - INFO - New Parameters Added by Adapters: {'base_model.classifier.original_module.bias', 'base_model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.bert.embeddings.word_embeddings.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.query.weight', 'base_model.bert.embeddings.LayerNorm.weight', 'base_model.classifier.modules_to_save.default.bias', 'base_model.classifier.original_module.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.query.bias', 'base_model.bert.embeddings.token_type_embeddings.weight', 'base_model.bert.encoder.layer.1.output.dense.weight', 'base_model.bert.encoder.layer.0.attention.self.value.bias', 'base_model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.bert.encoder.layer.0.attention.self.query.weight', 'base_model.bert.pooler.dense.bias', 'base_model.bert.embeddings.LayerNorm.bias', 'base_model.bert.encoder.layer.1.output.dense.bias', 'base_model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.bert.encoder.layer.0.output.dense.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.classifier.modules_to_save.default.weight', 'base_model.bert.embeddings.position_embeddings.weight', 'base_model.bert.encoder.layer.0.output.dense.weight', 'base_model.bert.pooler.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.value.bias', 'base_model.bert.encoder.layer.1.attention.self.value.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.self.key.weight', 'prompt_encoder.default.embedding.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.bert.encoder.layer.0.attention.self.query.bias', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'word_embeddings.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.bert.encoder.layer.0.attention.self.value.weight'}
+2024-06-18 21:19:50,633 - INFO - Total parameters: 4390276 || Trainable parameters: 4098 (0.09334265089484124%)
+2024-06-18 21:23:23,178 - INFO - Train results: {'train_runtime': 212.4213, 'train_samples_per_second': 4930.908, 'train_steps_per_second': 154.128, 'train_loss': 0.6894862884126499, 'epoch': 10.0}
+2024-06-18 21:23:23,861 - INFO - Evaluation results: {'eval_loss': 0.6815396547317505, 'eval_accuracy': 0.5654402343034962, 'eval_runtime': 0.6548, 'eval_samples_per_second': 8343.599, 'eval_steps_per_second': 261.167, 'epoch': 10.0}
+2024-06-18 21:23:23,862 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 21:24:52,263 - INFO - New Parameters Added by Adapters: {'base_model.classifier.original_module.bias', 'base_model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.bert.embeddings.word_embeddings.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.query.weight', 'base_model.bert.embeddings.LayerNorm.weight', 'base_model.classifier.modules_to_save.default.bias', 'base_model.classifier.original_module.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.query.bias', 'base_model.bert.embeddings.token_type_embeddings.weight', 'base_model.bert.encoder.layer.1.output.dense.weight', 'base_model.bert.encoder.layer.0.attention.self.value.bias', 'base_model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.bert.encoder.layer.0.attention.self.query.weight', 'base_model.bert.pooler.dense.bias', 'base_model.bert.embeddings.LayerNorm.bias', 'base_model.bert.encoder.layer.1.output.dense.bias', 'base_model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.bert.encoder.layer.0.output.dense.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.classifier.modules_to_save.default.weight', 'base_model.bert.embeddings.position_embeddings.weight', 'base_model.bert.encoder.layer.0.output.dense.weight', 'base_model.bert.pooler.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.value.bias', 'base_model.bert.encoder.layer.1.attention.self.value.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.self.key.weight', 'prompt_encoder.default.embedding.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.bert.encoder.layer.0.attention.self.query.bias', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'word_embeddings.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.bert.encoder.layer.0.attention.self.value.weight'}
+2024-06-18 21:24:52,264 - INFO - Total parameters: 4390534 || Trainable parameters: 4227 (0.09627530500845684%)
+2024-06-18 21:38:17,430 - INFO - Train results: {'train_runtime': 805.091, 'train_samples_per_second': 4877.734, 'train_steps_per_second': 152.43, 'train_loss': 1.0910373782396627, 'epoch': 10.0}
+2024-06-18 21:38:18,711 - INFO - Evaluation results: {'eval_loss': 1.0819060802459717, 'eval_accuracy': 0.400509424350484, 'eval_runtime': 1.1815, 'eval_samples_per_second': 8306.965, 'eval_steps_per_second': 259.831, 'epoch': 10.0}
+2024-06-18 21:38:18,712 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 21:38:27,777 - INFO - New Parameters Added by Adapters: {'base_model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.bert.embeddings.position_embeddings.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.classifier.modules_to_save.default.weight', 'base_model.bert.embeddings.token_type_embeddings.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.attention.self.query.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.weight', 'word_embeddings.weight', 'base_model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.classifier.modules_to_save.default.bias', 'base_model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.bert.encoder.layer.0.attention.self.value.bias', 'base_model.bert.encoder.layer.0.attention.self.value.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.query.bias', 'base_model.bert.pooler.dense.bias', 'base_model.classifier.original_module.bias', 'base_model.bert.pooler.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.bert.embeddings.word_embeddings.weight', 'base_model.bert.encoder.layer.1.attention.self.value.bias', 'base_model.bert.encoder.layer.0.attention.self.query.weight', 'base_model.bert.encoder.layer.0.attention.self.query.bias', 'base_model.bert.encoder.layer.0.output.dense.weight', 'base_model.bert.encoder.layer.1.output.dense.bias', 'base_model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.classifier.original_module.weight', 'base_model.bert.encoder.layer.1.attention.self.value.weight', 'base_model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.bert.encoder.layer.1.output.dense.weight', 'base_model.bert.embeddings.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.bert.embeddings.LayerNorm.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.bias', 'prompt_encoder.default.embedding.weight', 'base_model.bert.encoder.layer.0.output.dense.bias', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.bias'}
+2024-06-18 21:38:27,778 - INFO - Total parameters: 4390276 || Trainable parameters: 4098 (0.09334265089484124%)
+2024-06-18 21:41:52,529 - INFO - Train results: {'train_runtime': 204.6378, 'train_samples_per_second': 5118.457, 'train_steps_per_second': 159.99, 'train_loss': 0.6895873735208808, 'epoch': 10.0}
+2024-06-18 21:41:53,216 - INFO - Evaluation results: {'eval_loss': 0.6825734972953796, 'eval_accuracy': 0.5636097382390628, 'eval_runtime': 0.6597, 'eval_samples_per_second': 8280.807, 'eval_steps_per_second': 259.202, 'epoch': 10.0}
+2024-06-18 21:41:53,217 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 21:41:58,719 - INFO - New Parameters Added by Adapters: {'base_model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.bert.embeddings.position_embeddings.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.classifier.modules_to_save.default.weight', 'base_model.bert.embeddings.token_type_embeddings.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.attention.self.query.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.weight', 'word_embeddings.weight', 'base_model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.classifier.modules_to_save.default.bias', 'base_model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.bert.encoder.layer.0.attention.self.value.bias', 'base_model.bert.encoder.layer.0.attention.self.value.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.query.bias', 'base_model.bert.pooler.dense.bias', 'base_model.classifier.original_module.bias', 'base_model.bert.pooler.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.bert.embeddings.word_embeddings.weight', 'base_model.bert.encoder.layer.1.attention.self.value.bias', 'base_model.bert.encoder.layer.0.attention.self.query.weight', 'base_model.bert.encoder.layer.0.attention.self.query.bias', 'base_model.bert.encoder.layer.0.output.dense.weight', 'base_model.bert.encoder.layer.1.output.dense.bias', 'base_model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.classifier.original_module.weight', 'base_model.bert.encoder.layer.1.attention.self.value.weight', 'base_model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.bert.encoder.layer.1.output.dense.weight', 'base_model.bert.embeddings.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.bert.embeddings.LayerNorm.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.bias', 'prompt_encoder.default.embedding.weight', 'base_model.bert.encoder.layer.0.output.dense.bias', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.bias'}
+2024-06-18 21:41:58,719 - INFO - Total parameters: 4390276 || Trainable parameters: 4098 (0.09334265089484124%)
+2024-06-18 21:45:20,965 - INFO - Train results: {'train_runtime': 202.1816, 'train_samples_per_second': 5180.64, 'train_steps_per_second': 161.934, 'train_loss': 0.6814905510490524, 'epoch': 10.0}
+2024-06-18 21:45:21,638 - INFO - Evaluation results: {'eval_loss': 0.6638860106468201, 'eval_accuracy': 0.6015010067728355, 'eval_runtime': 0.6452, 'eval_samples_per_second': 8466.979, 'eval_steps_per_second': 265.029, 'epoch': 10.0}
+2024-06-18 21:45:21,639 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 21:45:30,190 - INFO - New Parameters Added by Adapters: {'base_model.bert.encoder.layer.1.attention.self.query.weight', 'base_model.bert.pooler.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.query.bias', 'base_model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.bert.encoder.layer.0.attention.self.query.bias', 'base_model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.bert.embeddings.LayerNorm.bias', 'base_model.bert.embeddings.position_embeddings.weight', 'base_model.bert.encoder.layer.0.attention.self.query.weight', 'base_model.bert.encoder.layer.0.output.dense.weight', 'base_model.bert.encoder.layer.0.output.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.value.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.classifier.original_module.bias', 'base_model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.value.weight', 'base_model.bert.embeddings.word_embeddings.weight', 'base_model.bert.encoder.layer.1.output.dense.weight', 'base_model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.bert.encoder.layer.1.output.dense.bias', 'base_model.classifier.modules_to_save.default.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.bert.embeddings.token_type_embeddings.weight', 'prompt_encoder.default.embedding.weight', 'base_model.bert.encoder.layer.0.attention.self.value.bias', 'word_embeddings.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.classifier.original_module.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.bert.embeddings.LayerNorm.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.classifier.modules_to_save.default.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.self.value.weight', 'base_model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.bert.pooler.dense.weight'}
+2024-06-18 21:45:30,191 - INFO - Total parameters: 4390276 || Trainable parameters: 4098 (0.09334265089484124%)
+2024-06-18 21:48:52,942 - INFO - Train results: {'train_runtime': 202.639, 'train_samples_per_second': 5168.945, 'train_steps_per_second': 161.568, 'train_loss': 0.685033675498473, 'epoch': 10.0}
+2024-06-18 21:48:53,613 - INFO - Evaluation results: {'eval_loss': 0.6754259467124939, 'eval_accuracy': 0.5828299469156142, 'eval_runtime': 0.6439, 'eval_samples_per_second': 8484.382, 'eval_steps_per_second': 265.574, 'epoch': 10.0}
+2024-06-18 21:48:53,614 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 21:50:56,242 - INFO - New Parameters Added by Adapters: {'base_model.bert.encoder.layer.1.attention.self.query.weight', 'base_model.bert.pooler.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.query.bias', 'base_model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.bert.encoder.layer.0.attention.self.query.bias', 'base_model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.bert.embeddings.LayerNorm.bias', 'base_model.bert.embeddings.position_embeddings.weight', 'base_model.bert.encoder.layer.0.attention.self.query.weight', 'base_model.bert.encoder.layer.0.output.dense.weight', 'base_model.bert.encoder.layer.0.output.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.value.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.classifier.original_module.bias', 'base_model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.bert.encoder.layer.1.attention.self.value.weight', 'base_model.bert.embeddings.word_embeddings.weight', 'base_model.bert.encoder.layer.1.output.dense.weight', 'base_model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.bert.encoder.layer.1.output.dense.bias', 'base_model.classifier.modules_to_save.default.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.bert.embeddings.token_type_embeddings.weight', 'prompt_encoder.default.embedding.weight', 'base_model.bert.encoder.layer.0.attention.self.value.bias', 'word_embeddings.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.classifier.original_module.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.bert.embeddings.LayerNorm.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.classifier.modules_to_save.default.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.bert.encoder.layer.0.attention.self.value.weight', 'base_model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.bert.pooler.dense.weight'}
+2024-06-18 21:50:56,242 - INFO - Total parameters: 4390276 || Trainable parameters: 4098 (0.09334265089484124%)
+2024-06-18 22:03:14,287 - INFO - Train results: {'train_runtime': 737.9689, 'train_samples_per_second': 4930.371, 'train_steps_per_second': 154.085, 'train_loss': 0.6335265600673966, 'epoch': 10.0}
+2024-06-18 22:03:19,378 - INFO - Evaluation results: {'eval_loss': 0.6222567558288574, 'eval_accuracy': 0.6390304229532525, 'eval_f1': 0.4978667767685109, 'eval_runtime': 4.9958, 'eval_samples_per_second': 8092.843, 'eval_steps_per_second': 253.014, 'epoch': 10.0}
+2024-06-18 22:03:19,379 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 22:03:28,199 - INFO - New Parameters Added by Adapters: {'base_model.bert.encoder.layer.0.attention.self.query.weight', 'prompt_encoder.default.embedding.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.attention.self.query.bias', 'base_model.bert.embeddings.token_type_embeddings.weight', 'base_model.bert.pooler.dense.bias', 'base_model.classifier.original_module.weight', 'base_model.bert.encoder.layer.1.output.dense.weight', 'base_model.classifier.modules_to_save.default.weight', 'base_model.bert.encoder.layer.0.output.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.value.weight', 'base_model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.bert.embeddings.word_embeddings.weight', 'base_model.bert.encoder.layer.0.output.dense.weight', 'base_model.bert.encoder.layer.0.attention.self.value.weight', 'base_model.bert.embeddings.position_embeddings.weight', 'base_model.bert.encoder.layer.1.attention.self.value.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.bert.embeddings.LayerNorm.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.bert.encoder.layer.0.intermediate.dense.bias', 'word_embeddings.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.attention.self.query.weight', 'base_model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.bert.encoder.layer.1.output.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.classifier.original_module.bias', 'base_model.bert.encoder.layer.0.attention.self.query.bias', 'base_model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.classifier.modules_to_save.default.bias', 'base_model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.bert.pooler.dense.weight', 'base_model.bert.encoder.layer.0.attention.self.value.bias', 'base_model.bert.embeddings.LayerNorm.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.weight'}
+2024-06-18 22:03:28,199 - INFO - Total parameters: 4390276 || Trainable parameters: 4098 (0.09334265089484124%)
+2024-06-18 22:06:54,733 - INFO - Train results: {'train_runtime': 206.4238, 'train_samples_per_second': 5074.173, 'train_steps_per_second': 158.606, 'train_loss': 0.6807988398382412, 'epoch': 10.0}
+2024-06-18 22:06:55,395 - INFO - Evaluation results: {'eval_loss': 0.66751629114151, 'eval_accuracy': 0.5945451217279882, 'eval_runtime': 0.6341, 'eval_samples_per_second': 8615.795, 'eval_steps_per_second': 269.687, 'epoch': 10.0}
+2024-06-18 22:06:55,396 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 22:07:06,786 - INFO - New Parameters Added by Adapters: {'base_model.bert.encoder.layer.0.attention.self.query.weight', 'prompt_encoder.default.embedding.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.attention.self.query.bias', 'base_model.bert.embeddings.token_type_embeddings.weight', 'base_model.bert.pooler.dense.bias', 'base_model.classifier.original_module.weight', 'base_model.bert.encoder.layer.1.output.dense.weight', 'base_model.classifier.modules_to_save.default.weight', 'base_model.bert.encoder.layer.0.output.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.value.weight', 'base_model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.bert.embeddings.word_embeddings.weight', 'base_model.bert.encoder.layer.0.output.dense.weight', 'base_model.bert.encoder.layer.0.attention.self.value.weight', 'base_model.bert.embeddings.position_embeddings.weight', 'base_model.bert.encoder.layer.1.attention.self.value.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.bert.embeddings.LayerNorm.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.bert.encoder.layer.0.intermediate.dense.bias', 'word_embeddings.weight', 'base_model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.bert.encoder.layer.1.attention.self.query.weight', 'base_model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.bert.encoder.layer.1.output.dense.bias', 'base_model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.classifier.original_module.bias', 'base_model.bert.encoder.layer.0.attention.self.query.bias', 'base_model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.classifier.modules_to_save.default.bias', 'base_model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.bert.pooler.dense.weight', 'base_model.bert.encoder.layer.0.attention.self.value.bias', 'base_model.bert.embeddings.LayerNorm.bias', 'base_model.bert.encoder.layer.1.output.LayerNorm.weight'}
+2024-06-18 22:07:06,787 - INFO - Total parameters: 4390276 || Trainable parameters: 4098 (0.09334265089484124%)
+2024-06-18 22:09:17,764 - INFO - Train results: {'train_runtime': 130.9161, 'train_samples_per_second': 5144.44, 'train_steps_per_second': 160.79, 'train_loss': 0.6678007353513088, 'epoch': 10.0}
+2024-06-18 22:09:17,884 - INFO - Evaluation results: {'eval_loss': 0.6474547982215881, 'eval_accuracy': 0.6708715596330275, 'eval_runtime': 0.1019, 'eval_samples_per_second': 8553.838, 'eval_steps_per_second': 274.665, 'epoch': 10.0}
+2024-06-18 22:09:17,885 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 22:09:19,791 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 22:09:19,791 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 22:09:21,643 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 22:09:21,643 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 22:09:23,509 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 22:09:23,509 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 22:09:25,373 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 22:09:25,374 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 22:47:41,386 - INFO - Total parameters: 4386307 || Trainable parameters: 387 (0.00882291184816749%)
+2024-06-18 22:57:23,259 - INFO - Train results: {'train_runtime': 581.7646, 'train_samples_per_second': 6750.187, 'train_steps_per_second': 210.944, 'train_loss': 1.0614502135435948, 'epoch': 10.0}
+2024-06-18 22:57:35,893 - INFO - Evaluation results: {'eval_loss': 1.0432934761047363, 'eval_accuracy': 0.45827814569536424, 'eval_runtime': 12.4192, 'eval_samples_per_second': 790.311, 'eval_steps_per_second': 24.72, 'epoch': 10.0}
+2024-06-18 22:57:35,895 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 22:58:09,401 - INFO - Total parameters: 4386178 || Trainable parameters: 258 (0.005882114223362572%)
+2024-06-18 23:00:39,180 - INFO - Train results: {'train_runtime': 149.6805, 'train_samples_per_second': 6997.77, 'train_steps_per_second': 218.733, 'train_loss': 0.6349573813055664, 'epoch': 10.0}
+2024-06-18 23:00:42,919 - INFO - Evaluation results: {'eval_loss': 0.595863938331604, 'eval_accuracy': 0.6857038257367747, 'eval_runtime': 3.6572, 'eval_samples_per_second': 1493.78, 'eval_steps_per_second': 46.758, 'epoch': 10.0}
+2024-06-18 23:00:42,920 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 23:02:46,554 - INFO - Total parameters: 4386178 || Trainable parameters: 258 (0.005882114223362572%)
+2024-06-18 23:11:22,650 - INFO - Train results: {'train_runtime': 515.9913, 'train_samples_per_second': 7051.397, 'train_steps_per_second': 220.372, 'train_loss': 0.5921029085723405, 'epoch': 10.0}

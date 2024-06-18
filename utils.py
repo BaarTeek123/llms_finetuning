@@ -1,3 +1,5 @@
+from opacus.validators import fix
+
 from Logger import logger
 from json import load, dump
 import torch
@@ -23,6 +25,8 @@ def create_output_file(file_path_to_json: Union[str, Path]):
         "Task name": []
     }
 
+    number_of_parameters = {}
+
     for k, v in data.items():
         if k == 'Comments': continue
         if 'task_type' in list(v.keys()):
@@ -32,9 +36,23 @@ def create_output_file(file_path_to_json: Union[str, Path]):
             df_data["Dataset"].append(v['dataset_name'])
 
         if 'eval results' in list(v.keys()):
-            df_data["Accuracy"].append(v['eval results']['eval_accuracy'])
+            if 'eval_accuracy' in v['eval results']:
+                df_data["Accuracy"].append(v['eval results']['eval_accuracy'])
+            elif 'accuracy' in v['eval results']:
+                df_data["Accuracy"].append(v['eval results']['accuracy'])
 
-    return pd.DataFrame(df_data).pivot(index="Dataset", columns="Task name", values="Accuracy")
+        if 'Comments' in list(v.keys()) and 'task_type' not in number_of_parameters.keys():
+            number_of_parameters[v['task_type']] = v['Comments']['trainable parameters']
+
+
+    pivot_table = pd.DataFrame(df_data).pivot(index="Dataset", columns="Task name", values="Accuracy")
+
+    # Add Number of parameters row
+    num_params_row = {task: number_of_parameters[task] for task in pivot_table.columns}
+    num_params_series = pd.Series(num_params_row, name="Number of parameters")
+    pivot_table = pivot_table.append(num_params_series)
+
+    return pivot_table.apply(lambda x: round(x, 5))
 
 
 def count_trainable_parameters(model):
@@ -80,7 +98,7 @@ def accuracy(preds, labels):
 
 
 def train_model(model, optimizer, train_dataloader, test_dataloader, device, privacy_engine=None, epochs=1, delta=1e-5,
-                max_grad_norm=1.0):
+                max_grad_norm=1.0, logger_step: int = 5000):
     train_results_list = []
 
     for epoch in range(1, epochs + 1):
@@ -109,7 +127,7 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
 
                 optimizer.step()
 
-                if step > 0 and step % Config().LOGGER_STEP == 0:
+                if step > 0 and step % logger_step == 0:
                     train_loss = np.mean(losses)
                     eps = privacy_engine.get_epsilon(delta) if privacy_engine else None
                     model.eval()
@@ -157,7 +175,10 @@ def evaluate(model, test_dataloader, device):
 
 
 if __name__ == '__main__':
-    # Test the function
+
     df = create_output_file('results/evaluation_results.json')
     df.to_csv('results/evaluation_results.csv')
+    print(df)
+    df = create_output_file('results/evaluation_results_dp.json')
+    df.to_csv('results/evaluation_results_dp.csv')
     print(df)

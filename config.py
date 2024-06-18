@@ -22,7 +22,7 @@ class DataArgs(BaseModel):
 
 
 class Config(BaseModel):
-    EPOCHS: int = 21
+    EPOCHS: int = 10
     BATCH_SIZE: int = 32
     LR: float = 0.05
     METRIC: str = 'accuracy'
@@ -44,7 +44,7 @@ class Config(BaseModel):
 class PrivateConfig(Config):
     DELTA: float = 10e-6
     EPSILON: float = np.inf
-    MAX_GRAD_NORM: float = 0.1
+    MAX_GRAD_NORM: float = 1.0
     NOISE_SCALE: float = 1.0
     SAMPLING_RATE: float = 0.1
 
