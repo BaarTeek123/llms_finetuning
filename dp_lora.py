@@ -16,6 +16,7 @@ from utils import count_trainable_parameters, save_results_to_json, train_model,
 
 TASK_NAME = 'DP LoRA'
 
+
 def main(dataset_name: str, epsilon: float):
     data_args = DataArgs()
     privacy_engine = PrivacyEngine()
@@ -56,7 +57,7 @@ def main(dataset_name: str, epsilon: float):
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
-
+    model.train()
     # Define optimizer
     optimizer = SGD(model.parameters(), lr=configuration.LR)
 
@@ -73,7 +74,7 @@ def main(dataset_name: str, epsilon: float):
     total_params, trainable_params = count_trainable_parameters(model)
     logger.info(
         f"Total parameters: {total_params} || Trainable parameters: {trainable_params} ({trainable_params / total_params * 100}%)")
-
+    model.train()
     model, train_results = train_model(
         model=model,
         train_dataloader=train_dataloader,
@@ -105,8 +106,7 @@ def main(dataset_name: str, epsilon: float):
         }
     )
 
-
-
+main('qnli', 8.0)
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=TASK_NAME)
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
@@ -120,4 +120,3 @@ if __name__ == '__main__':
     except Exception as ex:
         logger.error(f"Something went wrong while running {TASK_NAME}")
         logger.error(f"Error: {ex}")
-

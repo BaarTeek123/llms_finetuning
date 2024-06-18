@@ -47,7 +47,7 @@ def main(dataset_name: str, epsilon: float):
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
-
+    model.train()
     # Define optimizer
     optimizer = SGD(model.parameters(), lr=configuration.LR)
 
@@ -95,6 +95,7 @@ def main(dataset_name: str, epsilon: float):
             "configuration": configuration.model_dump_json()
         }
     )
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=TASK_NAME)

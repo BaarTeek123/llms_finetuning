@@ -56,7 +56,7 @@ def main(dataset_name: str, epsilon: float):
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
-
+    model.train()
     # Define optimizer
     optimizer = SGD(model.parameters(), lr=configuration.LR)
 

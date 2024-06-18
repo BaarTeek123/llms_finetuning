@@ -27,7 +27,7 @@ def main(dataset_name: str):
         warmup_steps=500,
         weight_decay=0.01,
         logging_dir='logs',
-        logging_steps=10,
+        logging_steps=10
 
     )
     # initialize tokenizer
@@ -35,10 +35,9 @@ def main(dataset_name: str):
     # Initialize the dataset
     glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
     logger.info(f"Metric: {glue_dataset.metric}")
-    config = AutoConfig.from_pretrained(configuration.MODEL_NAME)
 
-    model = AutoModelForSequenceClassification.from_pretrained(
-        configuration.MODEL_NAME, config=config, num_labels=glue_dataset.num_labels)
+    model = BertForSequenceClassification.from_pretrained(
+        configuration.MODEL_NAME, num_labels=glue_dataset.num_labels)
 
     for param in model.parameters():
         param.requires_grad = False
@@ -54,7 +53,7 @@ def main(dataset_name: str):
     # Activate the adapter
     model.train_adapter("lora")
     model.train_adapter("prefix")
-
+    model.train()
 
     # debugging purpose
     total_params, trainable_params = count_trainable_parameters(model)
@@ -103,6 +102,7 @@ def main(dataset_name: str):
         }
     )
 
+main('qnli')
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=TASK_NAME)
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')

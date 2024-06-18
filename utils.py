@@ -12,6 +12,8 @@ from typing import Union
 
 import pandas as pd
 
+from config import Config
+
 
 def create_output_file(file_path_to_json: Union[str, Path]):
     data = json.load(open(file_path_to_json))
@@ -107,10 +109,10 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
 
                 optimizer.step()
 
-                if step > 0 and step % 5000 == 0:
+                if step > 0 and step % Config().LOGGER_STEP == 0:
                     train_loss = np.mean(losses)
                     eps = privacy_engine.get_epsilon(delta) if privacy_engine else None
-
+                    model.eval()
                     eval_loss, eval_accuracy = evaluate(model,
                                                         test_dataloader,
                                                         device)
@@ -123,14 +125,13 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
                         f"Eval accuracy: {eval_accuracy:.3f} | "
                         f"ɛ: {eps:.2f}"
                     )
+                    model.train()
         train_results_list.append(np.mean(losses))
-
 
     return model, train_results_list
 
 
 def evaluate(model, test_dataloader, device):
-
     loss_arr = []
     accuracy_arr = []
 
