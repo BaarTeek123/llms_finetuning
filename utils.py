@@ -6,6 +6,33 @@ from opacus.utils.batch_memory_manager import BatchMemoryManager
 import numpy as np
 from torch.utils.data import TensorDataset
 
+import json
+from pathlib import Path
+from typing import Union
+
+import pandas as pd
+
+
+def create_output_file(file_path_to_json: Union[str, Path]):
+    data = json.load(open(file_path_to_json))
+    df_data = {
+        "Dataset": [],
+        "Accuracy": [],
+        "Task name": []
+    }
+
+    for k, v in data.items():
+        if k == 'Comments': continue
+        if 'task_type' in list(v.keys()):
+            df_data["Task name"].append(v['task_type'])
+
+        if 'dataset_name' in list(v.keys()):
+            df_data["Dataset"].append(v['dataset_name'])
+
+        if 'eval results' in list(v.keys()):
+            df_data["Accuracy"].append(v['eval results']['eval_accuracy'])
+
+    return pd.DataFrame(df_data).pivot(index="Dataset", columns="Task name", values="Accuracy")
 
 
 def count_trainable_parameters(model):
@@ -18,6 +45,7 @@ def _dataset_to_tensordataset(dataset):
     """Convert a Hugging Face dataset to a TensorDataset."""
     dataset.set_format(type='torch', columns=['input_ids', 'attention_mask', 'token_type_ids', 'label'])
     return TensorDataset(dataset['input_ids'], dataset['attention_mask'], dataset['token_type_ids'], dataset['label'])
+
 
 def save_results_to_json(file_path, task_type, dataset_name, train_results, eval_results,
                          additional_comments: dict = None):
@@ -37,7 +65,7 @@ def save_results_to_json(file_path, task_type, dataset_name, train_results, eval
         "train results": train_results,
         "eval results": eval_results
     }
-    data.update({"Comments": additional_comments})
+    data[key].update({"Comments": additional_comments})
 
     with open(file_path, 'w') as file:
         dump(data, file, indent=4)
@@ -137,3 +165,10 @@ def evaluate(model, test_dataloader, device):
 
     model.train()
     return np.mean(loss_arr), np.mean(accuracy_arr)
+
+
+if __name__ == '__main__':
+    # Test the function
+    df = create_output_file('results/evaluation_results.json')
+    df.to_csv('results/evaluation_results.csv')
+    print(df)

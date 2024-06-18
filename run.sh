@@ -2,8 +2,8 @@
 
 
 datasets=("mnli" "qnli" "qqp" "sst2")
-file_names=("ia3.py" "full_fine_tuning.py" "lora.py" "prefix" "prefix_lora.py" "top_layer.py"
-"dp_full_ft.py" "dp_top_layer.py" "dp_lora.py" "dp_prefix.py" "dp_soft_prompt.py")
+file_names=("ia3.py" "full_fine_tuning.py" "lora.py" "prefix" "prefix_lora.py" "top_layer.py" "soft_prompt.py" "soft_prompt_lora.py" "dp_full_ft.py" "dp_top_layer.py" "dp_lora.py" "dp_prefix.py" "dp_soft_prompt.py")
+file_names=("prefix.py" "prefix_lora.py" "top_layer.py" "soft_prompt.py" "soft_prompt_lora.py" "dp_full_ft.py" "dp_top_layer.py" "dp_lora.py" "dp_prefix.py" "dp_soft_prompt.py")
 
 # Loop through each Python script
 for file in "${file_names[@]}"; do
