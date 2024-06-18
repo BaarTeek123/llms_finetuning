@@ -56,7 +56,7 @@ def main(dataset_name: str, epsilon: float):
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
-    model = model.train()
+
     # Define optimizer
     optimizer = SGD(model.parameters(), lr=configuration.LR)
 
@@ -84,7 +84,7 @@ def main(dataset_name: str, epsilon: float):
         delta=configuration.DELTA,
         device=device
     )
-
+    model.eval()
     test_eval_loss, test_eval_accuracy = evaluate(model, eval_dataloader, device)
     eval_results = {
         "loss": test_eval_loss,

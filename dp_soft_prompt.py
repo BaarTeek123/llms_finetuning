@@ -49,7 +49,6 @@ def main(dataset_name: str, epsilon: float):
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
-    model = model.train()
 
     total_params, trainable_params = count_trainable_parameters(model)
     logger.info(
@@ -61,7 +60,7 @@ def main(dataset_name: str, epsilon: float):
     )
     logger.info("Training finished")
     logger.info(f"epsilon: {train_epsilon}, delta: {delta}")
-
+    model.eval()
     test_eval_loss, test_eval_accuracy = evaluate(model, eval_dataloader, device)
     eval_results = {
         "loss": test_eval_loss,

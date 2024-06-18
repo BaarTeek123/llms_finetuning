@@ -61,9 +61,7 @@ def main(dataset_name: str):
     trainer.save_metrics("eval", train_results.metrics)
     trainer.save_state()
 
-    # set to evaluation mode
     model.eval()
-
     # evaluate the model
     eval_results = trainer.evaluate()
     logger.info("Evaluation results: %s", eval_results)

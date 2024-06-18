@@ -490,3 +490,525 @@
 2024-06-17 20:49:22,245 - INFO - Total parameters count: 4392707
 2024-06-17 20:49:22,245 - INFO - Trainable parameters count: 6400 (0.1456960366352684%)
 2024-06-17 20:49:22,298 - INFO - Unique labels: {0, 1, 2}
+2024-06-17 22:30:23,751 - INFO - Total parameters: 4386178 || Trainable parameters: 258 (0.005882114223362572%)
+2024-06-17 22:30:31,153 - INFO - Epoch: 1 | Step: 5000 | Train loss: 0.755 | Eval loss: 0.849 | Eval accuracy: 0.510 | ɛ: 0.03
+2024-06-17 22:30:39,406 - INFO - Epoch: 1 | Step: 10000 | Train loss: 0.835 | Eval loss: 1.200 | Eval accuracy: 0.509 | ɛ: 0.03
+2024-06-17 22:30:47,275 - INFO - Epoch: 1 | Step: 15000 | Train loss: 0.954 | Eval loss: 1.526 | Eval accuracy: 0.509 | ɛ: 0.04
+2024-06-17 22:30:54,293 - INFO - Epoch: 1 | Step: 20000 | Train loss: 1.085 | Eval loss: 1.929 | Eval accuracy: 0.509 | ɛ: 0.04
+2024-06-17 22:31:01,750 - INFO - Epoch: 1 | Step: 25000 | Train loss: 1.229 | Eval loss: 2.259 | Eval accuracy: 0.509 | ɛ: 0.04
+2024-06-17 22:31:08,770 - INFO - Epoch: 1 | Step: 30000 | Train loss: 1.356 | Eval loss: 2.494 | Eval accuracy: 0.509 | ɛ: 0.05
+2024-06-17 22:31:16,389 - INFO - Epoch: 1 | Step: 35000 | Train loss: 1.465 | Eval loss: 2.510 | Eval accuracy: 0.509 | ɛ: 0.05
+2024-06-17 22:31:24,017 - INFO - Epoch: 1 | Step: 40000 | Train loss: 1.548 | Eval loss: 2.454 | Eval accuracy: 0.509 | ɛ: 0.05
+2024-06-17 22:31:31,343 - INFO - Epoch: 1 | Step: 45000 | Train loss: 1.608 | Eval loss: 2.448 | Eval accuracy: 0.509 | ɛ: 0.06
+2024-06-17 22:31:38,740 - INFO - Epoch: 1 | Step: 50000 | Train loss: 1.655 | Eval loss: 2.433 | Eval accuracy: 0.509 | ɛ: 0.06
+2024-06-17 22:31:45,970 - INFO - Epoch: 1 | Step: 55000 | Train loss: 1.688 | Eval loss: 2.486 | Eval accuracy: 0.509 | ɛ: 0.06
+2024-06-17 22:31:53,805 - INFO - Epoch: 1 | Step: 60000 | Train loss: 1.719 | Eval loss: 2.436 | Eval accuracy: 0.509 | ɛ: 0.06
+2024-06-17 22:32:01,514 - INFO - Epoch: 1 | Step: 65000 | Train loss: 1.741 | Eval loss: 2.422 | Eval accuracy: 0.509 | ɛ: 0.07
+2024-06-17 22:32:14,439 - INFO - Epoch: 2 | Step: 5000 | Train loss: 2.049 | Eval loss: 2.277 | Eval accuracy: 0.509 | ɛ: 0.07
+2024-06-17 22:32:21,356 - INFO - Epoch: 2 | Step: 10000 | Train loss: 1.993 | Eval loss: 2.257 | Eval accuracy: 0.509 | ɛ: 0.07
+2024-06-17 22:32:29,521 - INFO - Epoch: 2 | Step: 15000 | Train loss: 1.969 | Eval loss: 2.272 | Eval accuracy: 0.509 | ɛ: 0.07
+2024-06-17 22:32:37,156 - INFO - Epoch: 2 | Step: 20000 | Train loss: 1.965 | Eval loss: 2.232 | Eval accuracy: 0.509 | ɛ: 0.08
+2024-06-17 22:32:45,197 - INFO - Epoch: 2 | Step: 25000 | Train loss: 1.950 | Eval loss: 2.211 | Eval accuracy: 0.509 | ɛ: 0.08
+2024-06-17 22:32:52,494 - INFO - Epoch: 2 | Step: 30000 | Train loss: 1.938 | Eval loss: 2.174 | Eval accuracy: 0.509 | ɛ: 0.08
+2024-06-17 22:33:00,260 - INFO - Epoch: 2 | Step: 35000 | Train loss: 1.930 | Eval loss: 2.109 | Eval accuracy: 0.509 | ɛ: 0.08
+2024-06-17 22:33:07,919 - INFO - Epoch: 2 | Step: 40000 | Train loss: 1.917 | Eval loss: 2.091 | Eval accuracy: 0.509 | ɛ: 0.08
+2024-06-17 22:33:15,695 - INFO - Epoch: 2 | Step: 45000 | Train loss: 1.906 | Eval loss: 2.054 | Eval accuracy: 0.509 | ɛ: 0.09
+2024-06-17 22:33:23,368 - INFO - Epoch: 2 | Step: 50000 | Train loss: 1.894 | Eval loss: 1.990 | Eval accuracy: 0.509 | ɛ: 0.09
+2024-06-17 22:33:30,715 - INFO - Epoch: 2 | Step: 55000 | Train loss: 1.879 | Eval loss: 1.994 | Eval accuracy: 0.509 | ɛ: 0.09
+2024-06-17 22:33:38,346 - INFO - Epoch: 2 | Step: 60000 | Train loss: 1.866 | Eval loss: 1.950 | Eval accuracy: 0.509 | ɛ: 0.09
+2024-06-17 22:33:45,782 - INFO - Epoch: 2 | Step: 65000 | Train loss: 1.853 | Eval loss: 1.991 | Eval accuracy: 0.509 | ɛ: 0.09
+2024-06-17 22:33:54,028 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-17 22:38:14,284 - INFO - Total parameters: 4386307 || Trainable parameters: 387 (0.00882291184816749%)
+2024-06-17 22:38:21,484 - INFO - Epoch: 1 | Step: 5000 | Train loss: 1.149 | Eval loss: 1.142 | Eval accuracy: 0.361 | ɛ: 0.02
+2024-06-17 22:38:28,638 - INFO - Epoch: 1 | Step: 10000 | Train loss: 1.154 | Eval loss: 1.135 | Eval accuracy: 0.367 | ɛ: 0.02
+2024-06-17 22:38:36,782 - INFO - Epoch: 1 | Step: 15000 | Train loss: 1.156 | Eval loss: 1.128 | Eval accuracy: 0.375 | ɛ: 0.02
+2024-06-17 22:38:44,910 - INFO - Epoch: 1 | Step: 20000 | Train loss: 1.155 | Eval loss: 1.122 | Eval accuracy: 0.384 | ɛ: 0.02
+2024-06-17 22:38:52,051 - INFO - Epoch: 1 | Step: 25000 | Train loss: 1.151 | Eval loss: 1.118 | Eval accuracy: 0.384 | ɛ: 0.03
+2024-06-17 22:38:59,375 - INFO - Epoch: 1 | Step: 30000 | Train loss: 1.148 | Eval loss: 1.113 | Eval accuracy: 0.393 | ɛ: 0.03
+2024-06-17 22:39:06,759 - INFO - Epoch: 1 | Step: 35000 | Train loss: 1.147 | Eval loss: 1.110 | Eval accuracy: 0.389 | ɛ: 0.03
+2024-06-17 22:39:14,262 - INFO - Epoch: 1 | Step: 40000 | Train loss: 1.145 | Eval loss: 1.107 | Eval accuracy: 0.398 | ɛ: 0.03
+2024-06-17 22:39:21,864 - INFO - Epoch: 1 | Step: 45000 | Train loss: 1.144 | Eval loss: 1.107 | Eval accuracy: 0.404 | ɛ: 0.03
+2024-06-17 22:39:30,143 - INFO - Epoch: 1 | Step: 50000 | Train loss: 1.143 | Eval loss: 1.105 | Eval accuracy: 0.405 | ɛ: 0.03
+2024-06-17 22:39:38,845 - INFO - Epoch: 1 | Step: 55000 | Train loss: 1.141 | Eval loss: 1.104 | Eval accuracy: 0.405 | ɛ: 0.03
+2024-06-17 22:39:46,532 - INFO - Epoch: 1 | Step: 60000 | Train loss: 1.140 | Eval loss: 1.100 | Eval accuracy: 0.406 | ɛ: 0.03
+2024-06-17 22:39:53,890 - INFO - Epoch: 1 | Step: 65000 | Train loss: 1.139 | Eval loss: 1.098 | Eval accuracy: 0.407 | ɛ: 0.03
+2024-06-17 22:40:01,121 - INFO - Epoch: 1 | Step: 70000 | Train loss: 1.137 | Eval loss: 1.100 | Eval accuracy: 0.414 | ɛ: 0.04
+2024-06-17 22:40:09,810 - INFO - Epoch: 1 | Step: 75000 | Train loss: 1.137 | Eval loss: 1.097 | Eval accuracy: 0.411 | ɛ: 0.04
+2024-06-17 22:40:17,930 - INFO - Epoch: 1 | Step: 80000 | Train loss: 1.136 | Eval loss: 1.096 | Eval accuracy: 0.409 | ɛ: 0.04
+2024-06-17 22:40:25,389 - INFO - Epoch: 1 | Step: 85000 | Train loss: 1.135 | Eval loss: 1.094 | Eval accuracy: 0.411 | ɛ: 0.04
+2024-06-17 22:40:33,740 - INFO - Epoch: 1 | Step: 90000 | Train loss: 1.134 | Eval loss: 1.097 | Eval accuracy: 0.413 | ɛ: 0.04
+2024-06-17 22:40:41,532 - INFO - Epoch: 1 | Step: 95000 | Train loss: 1.133 | Eval loss: 1.106 | Eval accuracy: 0.416 | ɛ: 0.04
+2024-06-17 22:40:50,992 - INFO - Epoch: 1 | Step: 100000 | Train loss: 1.133 | Eval loss: 1.097 | Eval accuracy: 0.411 | ɛ: 0.04
+2024-06-17 22:40:59,906 - INFO - Epoch: 1 | Step: 105000 | Train loss: 1.132 | Eval loss: 1.095 | Eval accuracy: 0.414 | ɛ: 0.04
+2024-06-17 22:41:07,778 - INFO - Epoch: 1 | Step: 110000 | Train loss: 1.132 | Eval loss: 1.097 | Eval accuracy: 0.414 | ɛ: 0.04
+2024-06-17 22:41:15,916 - INFO - Epoch: 1 | Step: 115000 | Train loss: 1.132 | Eval loss: 1.095 | Eval accuracy: 0.413 | ɛ: 0.04
+2024-06-17 22:41:24,087 - INFO - Epoch: 1 | Step: 120000 | Train loss: 1.131 | Eval loss: 1.099 | Eval accuracy: 0.413 | ɛ: 0.04
+2024-06-17 22:41:33,242 - INFO - Epoch: 1 | Step: 125000 | Train loss: 1.131 | Eval loss: 1.098 | Eval accuracy: 0.412 | ɛ: 0.04
+2024-06-17 22:41:41,189 - INFO - Epoch: 1 | Step: 130000 | Train loss: 1.131 | Eval loss: 1.102 | Eval accuracy: 0.416 | ɛ: 0.04
+2024-06-17 22:41:48,315 - INFO - Epoch: 1 | Step: 135000 | Train loss: 1.130 | Eval loss: 1.102 | Eval accuracy: 0.418 | ɛ: 0.04
+2024-06-17 22:41:55,416 - INFO - Epoch: 1 | Step: 140000 | Train loss: 1.130 | Eval loss: 1.097 | Eval accuracy: 0.418 | ɛ: 0.05
+2024-06-17 22:42:02,739 - INFO - Epoch: 1 | Step: 145000 | Train loss: 1.130 | Eval loss: 1.104 | Eval accuracy: 0.419 | ɛ: 0.05
+2024-06-17 22:42:10,069 - INFO - Epoch: 1 | Step: 150000 | Train loss: 1.129 | Eval loss: 1.099 | Eval accuracy: 0.419 | ɛ: 0.05
+2024-06-17 22:42:17,223 - INFO - Epoch: 1 | Step: 155000 | Train loss: 1.129 | Eval loss: 1.097 | Eval accuracy: 0.422 | ɛ: 0.05
+2024-06-17 22:42:25,597 - INFO - Epoch: 1 | Step: 160000 | Train loss: 1.129 | Eval loss: 1.095 | Eval accuracy: 0.422 | ɛ: 0.05
+2024-06-17 22:42:32,876 - INFO - Epoch: 1 | Step: 165000 | Train loss: 1.128 | Eval loss: 1.096 | Eval accuracy: 0.427 | ɛ: 0.05
+2024-06-17 22:42:40,618 - INFO - Epoch: 1 | Step: 170000 | Train loss: 1.128 | Eval loss: 1.096 | Eval accuracy: 0.424 | ɛ: 0.05
+2024-06-17 22:42:49,044 - INFO - Epoch: 1 | Step: 175000 | Train loss: 1.128 | Eval loss: 1.090 | Eval accuracy: 0.426 | ɛ: 0.05
+2024-06-17 22:42:56,692 - INFO - Epoch: 1 | Step: 180000 | Train loss: 1.128 | Eval loss: 1.096 | Eval accuracy: 0.424 | ɛ: 0.05
+2024-06-17 22:43:04,008 - INFO - Epoch: 1 | Step: 185000 | Train loss: 1.128 | Eval loss: 1.094 | Eval accuracy: 0.426 | ɛ: 0.05
+2024-06-17 22:43:11,444 - INFO - Epoch: 1 | Step: 190000 | Train loss: 1.127 | Eval loss: 1.095 | Eval accuracy: 0.424 | ɛ: 0.05
+2024-06-17 22:43:19,223 - INFO - Epoch: 1 | Step: 195000 | Train loss: 1.127 | Eval loss: 1.094 | Eval accuracy: 0.426 | ɛ: 0.05
+2024-06-17 22:43:26,485 - INFO - Epoch: 1 | Step: 200000 | Train loss: 1.127 | Eval loss: 1.099 | Eval accuracy: 0.424 | ɛ: 0.05
+2024-06-17 22:43:33,755 - INFO - Epoch: 1 | Step: 205000 | Train loss: 1.127 | Eval loss: 1.094 | Eval accuracy: 0.427 | ɛ: 0.05
+2024-06-17 22:43:42,095 - INFO - Epoch: 1 | Step: 210000 | Train loss: 1.127 | Eval loss: 1.097 | Eval accuracy: 0.427 | ɛ: 0.05
+2024-06-17 22:43:49,750 - INFO - Epoch: 1 | Step: 215000 | Train loss: 1.127 | Eval loss: 1.092 | Eval accuracy: 0.429 | ɛ: 0.05
+2024-06-17 22:43:57,649 - INFO - Epoch: 1 | Step: 220000 | Train loss: 1.126 | Eval loss: 1.093 | Eval accuracy: 0.431 | ɛ: 0.05
+2024-06-17 22:44:05,273 - INFO - Epoch: 1 | Step: 225000 | Train loss: 1.126 | Eval loss: 1.090 | Eval accuracy: 0.430 | ɛ: 0.05
+2024-06-17 22:44:12,414 - INFO - Epoch: 1 | Step: 230000 | Train loss: 1.126 | Eval loss: 1.094 | Eval accuracy: 0.430 | ɛ: 0.05
+2024-06-17 22:44:20,089 - INFO - Epoch: 1 | Step: 235000 | Train loss: 1.125 | Eval loss: 1.096 | Eval accuracy: 0.430 | ɛ: 0.06
+2024-06-17 22:44:27,937 - INFO - Epoch: 1 | Step: 240000 | Train loss: 1.125 | Eval loss: 1.089 | Eval accuracy: 0.431 | ɛ: 0.06
+2024-06-17 22:44:36,014 - INFO - Epoch: 1 | Step: 245000 | Train loss: 1.125 | Eval loss: 1.097 | Eval accuracy: 0.430 | ɛ: 0.06
+2024-06-17 22:44:43,200 - INFO - Epoch: 1 | Step: 250000 | Train loss: 1.125 | Eval loss: 1.098 | Eval accuracy: 0.429 | ɛ: 0.06
+2024-06-17 22:44:50,540 - INFO - Epoch: 1 | Step: 255000 | Train loss: 1.125 | Eval loss: 1.098 | Eval accuracy: 0.430 | ɛ: 0.06
+2024-06-17 22:44:57,901 - INFO - Epoch: 1 | Step: 260000 | Train loss: 1.125 | Eval loss: 1.091 | Eval accuracy: 0.431 | ɛ: 0.06
+2024-06-17 22:45:05,815 - INFO - Epoch: 1 | Step: 265000 | Train loss: 1.124 | Eval loss: 1.101 | Eval accuracy: 0.428 | ɛ: 0.06
+2024-06-17 22:45:12,793 - INFO - Epoch: 1 | Step: 270000 | Train loss: 1.124 | Eval loss: 1.092 | Eval accuracy: 0.431 | ɛ: 0.06
+2024-06-17 22:45:20,207 - INFO - Epoch: 1 | Step: 275000 | Train loss: 1.124 | Eval loss: 1.097 | Eval accuracy: 0.430 | ɛ: 0.06
+2024-06-17 22:45:27,810 - INFO - Epoch: 1 | Step: 280000 | Train loss: 1.124 | Eval loss: 1.093 | Eval accuracy: 0.430 | ɛ: 0.06
+2024-06-17 22:45:35,569 - INFO - Epoch: 1 | Step: 285000 | Train loss: 1.124 | Eval loss: 1.096 | Eval accuracy: 0.431 | ɛ: 0.06
+2024-06-17 22:45:43,634 - INFO - Epoch: 1 | Step: 290000 | Train loss: 1.124 | Eval loss: 1.094 | Eval accuracy: 0.431 | ɛ: 0.06
+2024-06-17 22:45:52,689 - INFO - Epoch: 1 | Step: 295000 | Train loss: 1.124 | Eval loss: 1.098 | Eval accuracy: 0.430 | ɛ: 0.06
+2024-06-17 22:46:00,438 - INFO - Epoch: 1 | Step: 300000 | Train loss: 1.124 | Eval loss: 1.094 | Eval accuracy: 0.433 | ɛ: 0.06
+2024-06-17 22:46:07,429 - INFO - Epoch: 1 | Step: 305000 | Train loss: 1.124 | Eval loss: 1.095 | Eval accuracy: 0.432 | ɛ: 0.06
+2024-06-17 22:46:14,973 - INFO - Epoch: 1 | Step: 310000 | Train loss: 1.124 | Eval loss: 1.098 | Eval accuracy: 0.432 | ɛ: 0.06
+2024-06-17 22:46:22,218 - INFO - Epoch: 1 | Step: 315000 | Train loss: 1.123 | Eval loss: 1.100 | Eval accuracy: 0.430 | ɛ: 0.06
+2024-06-17 22:46:29,575 - INFO - Epoch: 1 | Step: 320000 | Train loss: 1.123 | Eval loss: 1.093 | Eval accuracy: 0.434 | ɛ: 0.06
+2024-06-17 22:46:36,583 - INFO - Epoch: 1 | Step: 325000 | Train loss: 1.123 | Eval loss: 1.092 | Eval accuracy: 0.435 | ɛ: 0.06
+2024-06-17 22:46:43,893 - INFO - Epoch: 1 | Step: 330000 | Train loss: 1.123 | Eval loss: 1.093 | Eval accuracy: 0.434 | ɛ: 0.06
+2024-06-17 22:46:51,019 - INFO - Epoch: 1 | Step: 335000 | Train loss: 1.123 | Eval loss: 1.097 | Eval accuracy: 0.433 | ɛ: 0.06
+2024-06-17 22:46:58,333 - INFO - Epoch: 1 | Step: 340000 | Train loss: 1.123 | Eval loss: 1.097 | Eval accuracy: 0.433 | ɛ: 0.06
+2024-06-17 22:47:05,730 - INFO - Epoch: 1 | Step: 345000 | Train loss: 1.123 | Eval loss: 1.094 | Eval accuracy: 0.434 | ɛ: 0.06
+2024-06-17 22:47:13,358 - INFO - Epoch: 1 | Step: 350000 | Train loss: 1.123 | Eval loss: 1.095 | Eval accuracy: 0.433 | ɛ: 0.07
+2024-06-17 22:47:20,695 - INFO - Epoch: 1 | Step: 355000 | Train loss: 1.123 | Eval loss: 1.095 | Eval accuracy: 0.434 | ɛ: 0.07
+2024-06-17 22:47:28,263 - INFO - Epoch: 1 | Step: 360000 | Train loss: 1.123 | Eval loss: 1.097 | Eval accuracy: 0.434 | ɛ: 0.07
+2024-06-17 22:47:36,250 - INFO - Epoch: 1 | Step: 365000 | Train loss: 1.122 | Eval loss: 1.092 | Eval accuracy: 0.436 | ɛ: 0.07
+2024-06-17 22:47:45,019 - INFO - Epoch: 1 | Step: 370000 | Train loss: 1.123 | Eval loss: 1.098 | Eval accuracy: 0.434 | ɛ: 0.07
+2024-06-17 22:47:52,365 - INFO - Epoch: 1 | Step: 375000 | Train loss: 1.122 | Eval loss: 1.110 | Eval accuracy: 0.433 | ɛ: 0.07
+2024-06-17 22:47:59,903 - INFO - Epoch: 1 | Step: 380000 | Train loss: 1.122 | Eval loss: 1.102 | Eval accuracy: 0.432 | ɛ: 0.07
+2024-06-17 22:48:08,224 - INFO - Epoch: 1 | Step: 385000 | Train loss: 1.122 | Eval loss: 1.113 | Eval accuracy: 0.431 | ɛ: 0.07
+2024-06-17 22:48:17,319 - INFO - Epoch: 1 | Step: 390000 | Train loss: 1.122 | Eval loss: 1.103 | Eval accuracy: 0.434 | ɛ: 0.07
+2024-06-17 22:49:14,619 - INFO - Epoch: 2 | Step: 5000 | Train loss: 1.124 | Eval loss: 1.104 | Eval accuracy: 0.434 | ɛ: 0.07
+2024-06-17 22:49:21,839 - INFO - Epoch: 2 | Step: 10000 | Train loss: 1.119 | Eval loss: 1.108 | Eval accuracy: 0.434 | ɛ: 0.07
+2024-06-17 22:49:29,062 - INFO - Epoch: 2 | Step: 15000 | Train loss: 1.121 | Eval loss: 1.118 | Eval accuracy: 0.432 | ɛ: 0.07
+2024-06-17 22:49:36,866 - INFO - Epoch: 2 | Step: 20000 | Train loss: 1.125 | Eval loss: 1.097 | Eval accuracy: 0.433 | ɛ: 0.07
+2024-06-17 22:49:43,854 - INFO - Epoch: 2 | Step: 25000 | Train loss: 1.121 | Eval loss: 1.099 | Eval accuracy: 0.436 | ɛ: 0.07
+2024-06-17 22:49:51,191 - INFO - Epoch: 2 | Step: 30000 | Train loss: 1.117 | Eval loss: 1.094 | Eval accuracy: 0.437 | ɛ: 0.07
+2024-06-17 22:49:59,182 - INFO - Epoch: 2 | Step: 35000 | Train loss: 1.118 | Eval loss: 1.104 | Eval accuracy: 0.434 | ɛ: 0.07
+2024-06-17 22:50:06,770 - INFO - Epoch: 2 | Step: 40000 | Train loss: 1.117 | Eval loss: 1.108 | Eval accuracy: 0.433 | ɛ: 0.07
+2024-06-17 22:50:13,982 - INFO - Epoch: 2 | Step: 45000 | Train loss: 1.116 | Eval loss: 1.112 | Eval accuracy: 0.435 | ɛ: 0.07
+2024-06-17 22:50:21,637 - INFO - Epoch: 2 | Step: 50000 | Train loss: 1.117 | Eval loss: 1.106 | Eval accuracy: 0.434 | ɛ: 0.07
+2024-06-17 22:50:29,231 - INFO - Epoch: 2 | Step: 55000 | Train loss: 1.118 | Eval loss: 1.102 | Eval accuracy: 0.436 | ɛ: 0.07
+2024-06-17 22:50:36,385 - INFO - Epoch: 2 | Step: 60000 | Train loss: 1.118 | Eval loss: 1.110 | Eval accuracy: 0.435 | ɛ: 0.07
+2024-06-17 22:50:43,493 - INFO - Epoch: 2 | Step: 65000 | Train loss: 1.117 | Eval loss: 1.112 | Eval accuracy: 0.436 | ɛ: 0.07
+2024-06-17 22:50:50,897 - INFO - Epoch: 2 | Step: 70000 | Train loss: 1.119 | Eval loss: 1.103 | Eval accuracy: 0.436 | ɛ: 0.07
+2024-06-17 22:50:58,305 - INFO - Epoch: 2 | Step: 75000 | Train loss: 1.119 | Eval loss: 1.103 | Eval accuracy: 0.436 | ɛ: 0.07
+2024-06-17 22:51:05,325 - INFO - Epoch: 2 | Step: 80000 | Train loss: 1.119 | Eval loss: 1.109 | Eval accuracy: 0.436 | ɛ: 0.07
+2024-06-17 22:51:13,038 - INFO - Epoch: 2 | Step: 85000 | Train loss: 1.120 | Eval loss: 1.095 | Eval accuracy: 0.438 | ɛ: 0.07
+2024-06-17 22:51:20,171 - INFO - Epoch: 2 | Step: 90000 | Train loss: 1.120 | Eval loss: 1.109 | Eval accuracy: 0.438 | ɛ: 0.08
+2024-06-17 22:51:28,310 - INFO - Epoch: 2 | Step: 95000 | Train loss: 1.120 | Eval loss: 1.102 | Eval accuracy: 0.438 | ɛ: 0.08
+2024-06-17 22:51:35,219 - INFO - Epoch: 2 | Step: 100000 | Train loss: 1.120 | Eval loss: 1.109 | Eval accuracy: 0.438 | ɛ: 0.08
+2024-06-17 22:51:42,269 - INFO - Epoch: 2 | Step: 105000 | Train loss: 1.120 | Eval loss: 1.098 | Eval accuracy: 0.438 | ɛ: 0.08
+2024-06-17 22:51:49,220 - INFO - Epoch: 2 | Step: 110000 | Train loss: 1.120 | Eval loss: 1.105 | Eval accuracy: 0.437 | ɛ: 0.08
+2024-06-17 22:51:56,348 - INFO - Epoch: 2 | Step: 115000 | Train loss: 1.119 | Eval loss: 1.104 | Eval accuracy: 0.438 | ɛ: 0.08
+2024-06-17 22:52:03,351 - INFO - Epoch: 2 | Step: 120000 | Train loss: 1.119 | Eval loss: 1.094 | Eval accuracy: 0.442 | ɛ: 0.08
+2024-06-17 22:52:11,276 - INFO - Epoch: 2 | Step: 125000 | Train loss: 1.119 | Eval loss: 1.095 | Eval accuracy: 0.442 | ɛ: 0.08
+2024-06-17 22:52:18,955 - INFO - Epoch: 2 | Step: 130000 | Train loss: 1.119 | Eval loss: 1.099 | Eval accuracy: 0.440 | ɛ: 0.08
+2024-06-17 22:52:26,518 - INFO - Epoch: 2 | Step: 135000 | Train loss: 1.119 | Eval loss: 1.101 | Eval accuracy: 0.439 | ɛ: 0.08
+2024-06-17 22:52:33,923 - INFO - Epoch: 2 | Step: 140000 | Train loss: 1.119 | Eval loss: 1.101 | Eval accuracy: 0.441 | ɛ: 0.08
+2024-06-17 22:52:40,971 - INFO - Epoch: 2 | Step: 145000 | Train loss: 1.119 | Eval loss: 1.097 | Eval accuracy: 0.442 | ɛ: 0.08
+2024-06-17 22:52:49,168 - INFO - Epoch: 2 | Step: 150000 | Train loss: 1.119 | Eval loss: 1.095 | Eval accuracy: 0.442 | ɛ: 0.08
+2024-06-17 22:52:56,320 - INFO - Epoch: 2 | Step: 155000 | Train loss: 1.119 | Eval loss: 1.097 | Eval accuracy: 0.443 | ɛ: 0.08
+2024-06-17 22:53:05,987 - INFO - Epoch: 2 | Step: 160000 | Train loss: 1.119 | Eval loss: 1.100 | Eval accuracy: 0.440 | ɛ: 0.08
+2024-06-17 22:53:13,756 - INFO - Epoch: 2 | Step: 165000 | Train loss: 1.119 | Eval loss: 1.111 | Eval accuracy: 0.439 | ɛ: 0.08
+2024-06-17 22:53:21,777 - INFO - Epoch: 2 | Step: 170000 | Train loss: 1.119 | Eval loss: 1.111 | Eval accuracy: 0.438 | ɛ: 0.08
+2024-06-17 22:53:29,163 - INFO - Epoch: 2 | Step: 175000 | Train loss: 1.119 | Eval loss: 1.104 | Eval accuracy: 0.441 | ɛ: 0.08
+2024-06-17 22:53:36,482 - INFO - Epoch: 2 | Step: 180000 | Train loss: 1.120 | Eval loss: 1.101 | Eval accuracy: 0.443 | ɛ: 0.08
+2024-06-17 22:53:43,676 - INFO - Epoch: 2 | Step: 185000 | Train loss: 1.120 | Eval loss: 1.100 | Eval accuracy: 0.442 | ɛ: 0.08
+2024-06-17 22:53:51,054 - INFO - Epoch: 2 | Step: 190000 | Train loss: 1.120 | Eval loss: 1.105 | Eval accuracy: 0.439 | ɛ: 0.08
+2024-06-17 22:53:58,801 - INFO - Epoch: 2 | Step: 195000 | Train loss: 1.120 | Eval loss: 1.107 | Eval accuracy: 0.440 | ɛ: 0.08
+2024-06-17 22:54:05,966 - INFO - Epoch: 2 | Step: 200000 | Train loss: 1.120 | Eval loss: 1.112 | Eval accuracy: 0.440 | ɛ: 0.08
+2024-06-17 22:54:14,398 - INFO - Epoch: 2 | Step: 205000 | Train loss: 1.120 | Eval loss: 1.122 | Eval accuracy: 0.438 | ɛ: 0.08
+2024-06-17 22:54:23,343 - INFO - Epoch: 2 | Step: 210000 | Train loss: 1.120 | Eval loss: 1.127 | Eval accuracy: 0.437 | ɛ: 0.08
+2024-06-17 22:54:31,223 - INFO - Epoch: 2 | Step: 215000 | Train loss: 1.120 | Eval loss: 1.110 | Eval accuracy: 0.440 | ɛ: 0.08
+2024-06-17 22:54:40,097 - INFO - Epoch: 2 | Step: 220000 | Train loss: 1.120 | Eval loss: 1.110 | Eval accuracy: 0.438 | ɛ: 0.08
+2024-06-17 22:54:47,321 - INFO - Epoch: 2 | Step: 225000 | Train loss: 1.121 | Eval loss: 1.113 | Eval accuracy: 0.440 | ɛ: 0.08
+2024-06-17 22:54:54,467 - INFO - Epoch: 2 | Step: 230000 | Train loss: 1.121 | Eval loss: 1.110 | Eval accuracy: 0.442 | ɛ: 0.08
+2024-06-17 22:55:01,439 - INFO - Epoch: 2 | Step: 235000 | Train loss: 1.121 | Eval loss: 1.109 | Eval accuracy: 0.441 | ɛ: 0.08
+2024-06-17 22:55:08,962 - INFO - Epoch: 2 | Step: 240000 | Train loss: 1.121 | Eval loss: 1.108 | Eval accuracy: 0.441 | ɛ: 0.08
+2024-06-17 22:55:16,581 - INFO - Epoch: 2 | Step: 245000 | Train loss: 1.121 | Eval loss: 1.099 | Eval accuracy: 0.443 | ɛ: 0.08
+2024-06-17 22:55:24,397 - INFO - Epoch: 2 | Step: 250000 | Train loss: 1.121 | Eval loss: 1.100 | Eval accuracy: 0.443 | ɛ: 0.09
+2024-06-17 22:55:32,249 - INFO - Epoch: 2 | Step: 255000 | Train loss: 1.122 | Eval loss: 1.097 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:55:40,909 - INFO - Epoch: 2 | Step: 260000 | Train loss: 1.122 | Eval loss: 1.102 | Eval accuracy: 0.441 | ɛ: 0.09
+2024-06-17 22:55:50,228 - INFO - Epoch: 2 | Step: 265000 | Train loss: 1.121 | Eval loss: 1.103 | Eval accuracy: 0.441 | ɛ: 0.09
+2024-06-17 22:55:58,310 - INFO - Epoch: 2 | Step: 270000 | Train loss: 1.122 | Eval loss: 1.114 | Eval accuracy: 0.441 | ɛ: 0.09
+2024-06-17 22:56:07,008 - INFO - Epoch: 2 | Step: 275000 | Train loss: 1.122 | Eval loss: 1.109 | Eval accuracy: 0.441 | ɛ: 0.09
+2024-06-17 22:56:14,855 - INFO - Epoch: 2 | Step: 280000 | Train loss: 1.122 | Eval loss: 1.112 | Eval accuracy: 0.441 | ɛ: 0.09
+2024-06-17 22:56:22,472 - INFO - Epoch: 2 | Step: 285000 | Train loss: 1.122 | Eval loss: 1.108 | Eval accuracy: 0.441 | ɛ: 0.09
+2024-06-17 22:56:30,414 - INFO - Epoch: 2 | Step: 290000 | Train loss: 1.123 | Eval loss: 1.101 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:56:38,660 - INFO - Epoch: 2 | Step: 295000 | Train loss: 1.123 | Eval loss: 1.101 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:56:46,473 - INFO - Epoch: 2 | Step: 300000 | Train loss: 1.123 | Eval loss: 1.098 | Eval accuracy: 0.445 | ɛ: 0.09
+2024-06-17 22:56:54,240 - INFO - Epoch: 2 | Step: 305000 | Train loss: 1.123 | Eval loss: 1.100 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:57:02,043 - INFO - Epoch: 2 | Step: 310000 | Train loss: 1.122 | Eval loss: 1.104 | Eval accuracy: 0.443 | ɛ: 0.09
+2024-06-17 22:57:09,781 - INFO - Epoch: 2 | Step: 315000 | Train loss: 1.122 | Eval loss: 1.108 | Eval accuracy: 0.442 | ɛ: 0.09
+2024-06-17 22:57:18,723 - INFO - Epoch: 2 | Step: 320000 | Train loss: 1.122 | Eval loss: 1.104 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:57:26,573 - INFO - Epoch: 2 | Step: 325000 | Train loss: 1.123 | Eval loss: 1.103 | Eval accuracy: 0.443 | ɛ: 0.09
+2024-06-17 22:57:34,440 - INFO - Epoch: 2 | Step: 330000 | Train loss: 1.123 | Eval loss: 1.104 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:57:42,246 - INFO - Epoch: 2 | Step: 335000 | Train loss: 1.123 | Eval loss: 1.102 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:57:49,836 - INFO - Epoch: 2 | Step: 340000 | Train loss: 1.122 | Eval loss: 1.104 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:57:57,161 - INFO - Epoch: 2 | Step: 345000 | Train loss: 1.122 | Eval loss: 1.094 | Eval accuracy: 0.447 | ɛ: 0.09
+2024-06-17 22:58:04,814 - INFO - Epoch: 2 | Step: 350000 | Train loss: 1.122 | Eval loss: 1.101 | Eval accuracy: 0.446 | ɛ: 0.09
+2024-06-17 22:58:12,379 - INFO - Epoch: 2 | Step: 355000 | Train loss: 1.123 | Eval loss: 1.102 | Eval accuracy: 0.446 | ɛ: 0.09
+2024-06-17 22:58:19,968 - INFO - Epoch: 2 | Step: 360000 | Train loss: 1.123 | Eval loss: 1.098 | Eval accuracy: 0.447 | ɛ: 0.09
+2024-06-17 22:58:27,631 - INFO - Epoch: 2 | Step: 365000 | Train loss: 1.123 | Eval loss: 1.104 | Eval accuracy: 0.445 | ɛ: 0.09
+2024-06-17 22:58:37,888 - INFO - Epoch: 2 | Step: 370000 | Train loss: 1.123 | Eval loss: 1.107 | Eval accuracy: 0.443 | ɛ: 0.09
+2024-06-17 22:58:46,238 - INFO - Epoch: 2 | Step: 375000 | Train loss: 1.123 | Eval loss: 1.102 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:58:54,341 - INFO - Epoch: 2 | Step: 380000 | Train loss: 1.123 | Eval loss: 1.111 | Eval accuracy: 0.444 | ɛ: 0.09
+2024-06-17 22:59:02,478 - INFO - Epoch: 2 | Step: 385000 | Train loss: 1.123 | Eval loss: 1.101 | Eval accuracy: 0.446 | ɛ: 0.09
+2024-06-17 22:59:09,985 - INFO - Epoch: 2 | Step: 390000 | Train loss: 1.123 | Eval loss: 1.094 | Eval accuracy: 0.448 | ɛ: 0.09
+2024-06-17 22:59:57,649 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-17 23:00:04,404 - INFO - Total parameters: 4386178 || Trainable parameters: 258 (0.005882114223362572%)
+2024-06-17 23:00:12,734 - INFO - Epoch: 1 | Step: 5000 | Train loss: 0.894 | Eval loss: 0.951 | Eval accuracy: 0.500 | ɛ: 0.02
+2024-06-17 23:00:20,796 - INFO - Epoch: 1 | Step: 10000 | Train loss: 0.895 | Eval loss: 1.032 | Eval accuracy: 0.499 | ɛ: 0.03
+2024-06-17 23:00:29,148 - INFO - Epoch: 1 | Step: 15000 | Train loss: 0.917 | Eval loss: 1.069 | Eval accuracy: 0.500 | ɛ: 0.03
+2024-06-17 23:00:37,973 - INFO - Epoch: 1 | Step: 20000 | Train loss: 0.926 | Eval loss: 1.053 | Eval accuracy: 0.504 | ɛ: 0.04
+2024-06-17 23:00:45,661 - INFO - Epoch: 1 | Step: 25000 | Train loss: 0.931 | Eval loss: 1.157 | Eval accuracy: 0.502 | ɛ: 0.04
+2024-06-17 23:00:53,497 - INFO - Epoch: 1 | Step: 30000 | Train loss: 0.941 | Eval loss: 1.207 | Eval accuracy: 0.504 | ɛ: 0.04
+2024-06-17 23:01:01,032 - INFO - Epoch: 1 | Step: 35000 | Train loss: 0.957 | Eval loss: 1.325 | Eval accuracy: 0.503 | ɛ: 0.04
+2024-06-17 23:01:08,859 - INFO - Epoch: 1 | Step: 40000 | Train loss: 0.979 | Eval loss: 1.297 | Eval accuracy: 0.508 | ɛ: 0.05
+2024-06-17 23:01:17,106 - INFO - Epoch: 1 | Step: 45000 | Train loss: 0.993 | Eval loss: 1.335 | Eval accuracy: 0.510 | ɛ: 0.05
+2024-06-17 23:01:25,121 - INFO - Epoch: 1 | Step: 50000 | Train loss: 1.004 | Eval loss: 1.352 | Eval accuracy: 0.513 | ɛ: 0.05
+2024-06-17 23:01:33,105 - INFO - Epoch: 1 | Step: 55000 | Train loss: 1.013 | Eval loss: 1.385 | Eval accuracy: 0.516 | ɛ: 0.05
+2024-06-17 23:01:40,593 - INFO - Epoch: 1 | Step: 60000 | Train loss: 1.022 | Eval loss: 1.388 | Eval accuracy: 0.520 | ɛ: 0.06
+2024-06-17 23:01:48,985 - INFO - Epoch: 1 | Step: 65000 | Train loss: 1.029 | Eval loss: 1.401 | Eval accuracy: 0.526 | ɛ: 0.06
+2024-06-17 23:01:56,406 - INFO - Epoch: 1 | Step: 70000 | Train loss: 1.035 | Eval loss: 1.302 | Eval accuracy: 0.542 | ɛ: 0.06
+2024-06-17 23:02:04,094 - INFO - Epoch: 1 | Step: 75000 | Train loss: 1.035 | Eval loss: 1.345 | Eval accuracy: 0.542 | ɛ: 0.06
+2024-06-17 23:02:12,298 - INFO - Epoch: 1 | Step: 80000 | Train loss: 1.037 | Eval loss: 1.322 | Eval accuracy: 0.550 | ɛ: 0.06
+2024-06-17 23:02:19,589 - INFO - Epoch: 1 | Step: 85000 | Train loss: 1.036 | Eval loss: 1.311 | Eval accuracy: 0.558 | ɛ: 0.07
+2024-06-17 23:02:27,003 - INFO - Epoch: 1 | Step: 90000 | Train loss: 1.037 | Eval loss: 1.233 | Eval accuracy: 0.568 | ɛ: 0.07
+2024-06-17 23:02:34,919 - INFO - Epoch: 1 | Step: 95000 | Train loss: 1.036 | Eval loss: 1.270 | Eval accuracy: 0.570 | ɛ: 0.07
+2024-06-17 23:02:42,638 - INFO - Epoch: 1 | Step: 100000 | Train loss: 1.034 | Eval loss: 1.215 | Eval accuracy: 0.582 | ɛ: 0.07
+2024-06-17 23:03:01,176 - INFO - Epoch: 2 | Step: 5000 | Train loss: 1.002 | Eval loss: 1.229 | Eval accuracy: 0.592 | ɛ: 0.07
+2024-06-17 23:03:09,191 - INFO - Epoch: 2 | Step: 10000 | Train loss: 0.999 | Eval loss: 1.244 | Eval accuracy: 0.592 | ɛ: 0.07
+2024-06-17 23:03:16,503 - INFO - Epoch: 2 | Step: 15000 | Train loss: 1.016 | Eval loss: 1.241 | Eval accuracy: 0.597 | ɛ: 0.08
+2024-06-17 23:03:24,681 - INFO - Epoch: 2 | Step: 20000 | Train loss: 1.031 | Eval loss: 1.211 | Eval accuracy: 0.604 | ɛ: 0.08
+2024-06-17 23:03:33,708 - INFO - Epoch: 2 | Step: 25000 | Train loss: 1.045 | Eval loss: 1.215 | Eval accuracy: 0.606 | ɛ: 0.08
+2024-06-17 23:03:42,045 - INFO - Epoch: 2 | Step: 30000 | Train loss: 1.051 | Eval loss: 1.197 | Eval accuracy: 0.609 | ɛ: 0.08
+2024-06-17 23:03:49,343 - INFO - Epoch: 2 | Step: 35000 | Train loss: 1.052 | Eval loss: 1.205 | Eval accuracy: 0.611 | ɛ: 0.08
+2024-06-17 23:03:57,853 - INFO - Epoch: 2 | Step: 40000 | Train loss: 1.059 | Eval loss: 1.215 | Eval accuracy: 0.611 | ɛ: 0.08
+2024-06-17 23:04:05,892 - INFO - Epoch: 2 | Step: 45000 | Train loss: 1.068 | Eval loss: 1.220 | Eval accuracy: 0.612 | ɛ: 0.08
+2024-06-17 23:04:15,446 - INFO - Epoch: 2 | Step: 50000 | Train loss: 1.068 | Eval loss: 1.216 | Eval accuracy: 0.616 | ɛ: 0.09
+2024-06-17 23:04:23,765 - INFO - Epoch: 2 | Step: 55000 | Train loss: 1.071 | Eval loss: 1.202 | Eval accuracy: 0.621 | ɛ: 0.09
+2024-06-17 23:04:31,949 - INFO - Epoch: 2 | Step: 60000 | Train loss: 1.077 | Eval loss: 1.196 | Eval accuracy: 0.623 | ɛ: 0.09
+2024-06-17 23:04:40,339 - INFO - Epoch: 2 | Step: 65000 | Train loss: 1.081 | Eval loss: 1.172 | Eval accuracy: 0.630 | ɛ: 0.09
+2024-06-17 23:04:49,976 - INFO - Epoch: 2 | Step: 70000 | Train loss: 1.089 | Eval loss: 1.190 | Eval accuracy: 0.630 | ɛ: 0.09
+2024-06-17 23:04:59,185 - INFO - Epoch: 2 | Step: 75000 | Train loss: 1.091 | Eval loss: 1.203 | Eval accuracy: 0.630 | ɛ: 0.09
+2024-06-17 23:05:07,409 - INFO - Epoch: 2 | Step: 80000 | Train loss: 1.096 | Eval loss: 1.238 | Eval accuracy: 0.624 | ɛ: 0.09
+2024-06-17 23:05:16,567 - INFO - Epoch: 2 | Step: 85000 | Train loss: 1.104 | Eval loss: 1.236 | Eval accuracy: 0.627 | ɛ: 0.09
+2024-06-17 23:05:26,381 - INFO - Epoch: 2 | Step: 90000 | Train loss: 1.108 | Eval loss: 1.247 | Eval accuracy: 0.627 | ɛ: 0.10
+2024-06-17 23:05:34,172 - INFO - Epoch: 2 | Step: 95000 | Train loss: 1.114 | Eval loss: 1.233 | Eval accuracy: 0.629 | ɛ: 0.10
+2024-06-17 23:05:41,980 - INFO - Epoch: 2 | Step: 100000 | Train loss: 1.120 | Eval loss: 1.242 | Eval accuracy: 0.630 | ɛ: 0.10
+2024-06-17 23:05:50,096 - INFO - Epoch: 2 | Step: 105000 | Train loss: 1.125 | Eval loss: 1.272 | Eval accuracy: 0.626 | ɛ: 0.10
+2024-06-17 23:05:54,586 - INFO - Results saved to results/evaluation_results_dp.json
+2024-06-17 23:09:04,178 - INFO - Total parameters: 4394886 || Trainable parameters: 8579 (0.19520415319077672%)
+2024-06-17 23:09:22,425 - INFO - Epoch: 1 | Step: 5000 | Train loss: 1.104 | Eval loss: 1.102 | Eval accuracy: 0.322 | ɛ: 0.02
+2024-06-17 23:09:41,484 - INFO - Epoch: 1 | Step: 10000 | Train loss: 1.100 | Eval loss: 1.096 | Eval accuracy: 0.377 | ɛ: 0.02
+2024-06-17 23:10:02,411 - INFO - Epoch: 1 | Step: 15000 | Train loss: 1.098 | Eval loss: 1.091 | Eval accuracy: 0.385 | ɛ: 0.02
+2024-06-17 23:10:22,044 - INFO - Epoch: 1 | Step: 20000 | Train loss: 1.096 | Eval loss: 1.089 | Eval accuracy: 0.385 | ɛ: 0.02
+2024-06-17 23:10:41,564 - INFO - Epoch: 1 | Step: 25000 | Train loss: 1.095 | Eval loss: 1.087 | Eval accuracy: 0.388 | ɛ: 0.03
+2024-06-17 23:11:01,193 - INFO - Epoch: 1 | Step: 30000 | Train loss: 1.093 | Eval loss: 1.086 | Eval accuracy: 0.387 | ɛ: 0.03
+2024-06-17 23:11:21,406 - INFO - Epoch: 1 | Step: 35000 | Train loss: 1.093 | Eval loss: 1.084 | Eval accuracy: 0.395 | ɛ: 0.03
+2024-06-17 23:11:41,217 - INFO - Epoch: 1 | Step: 40000 | Train loss: 1.091 | Eval loss: 1.084 | Eval accuracy: 0.396 | ɛ: 0.03
+2024-06-17 23:12:02,554 - INFO - Epoch: 1 | Step: 45000 | Train loss: 1.090 | Eval loss: 1.083 | Eval accuracy: 0.402 | ɛ: 0.03
+2024-06-17 23:12:22,908 - INFO - Epoch: 1 | Step: 50000 | Train loss: 1.090 | Eval loss: 1.081 | Eval accuracy: 0.404 | ɛ: 0.03
+2024-06-17 23:12:42,533 - INFO - Epoch: 1 | Step: 55000 | Train loss: 1.090 | Eval loss: 1.081 | Eval accuracy: 0.406 | ɛ: 0.03
+2024-06-17 23:13:02,164 - INFO - Epoch: 1 | Step: 60000 | Train loss: 1.090 | Eval loss: 1.080 | Eval accuracy: 0.408 | ɛ: 0.03
+2024-06-17 23:13:21,364 - INFO - Epoch: 1 | Step: 65000 | Train loss: 1.089 | Eval loss: 1.081 | Eval accuracy: 0.401 | ɛ: 0.03
+2024-06-17 23:13:40,744 - INFO - Epoch: 1 | Step: 70000 | Train loss: 1.089 | Eval loss: 1.080 | Eval accuracy: 0.404 | ɛ: 0.04
+2024-06-17 23:14:00,087 - INFO - Epoch: 1 | Step: 75000 | Train loss: 1.088 | Eval loss: 1.080 | Eval accuracy: 0.404 | ɛ: 0.04
+2024-06-17 23:14:20,641 - INFO - Epoch: 1 | Step: 80000 | Train loss: 1.088 | Eval loss: 1.080 | Eval accuracy: 0.408 | ɛ: 0.04
+2024-06-17 23:14:41,201 - INFO - Epoch: 1 | Step: 85000 | Train loss: 1.088 | Eval loss: 1.079 | Eval accuracy: 0.408 | ɛ: 0.04
+2024-06-17 23:15:01,134 - INFO - Epoch: 1 | Step: 90000 | Train loss: 1.088 | Eval loss: 1.078 | Eval accuracy: 0.408 | ɛ: 0.04
+2024-06-17 23:15:21,382 - INFO - Epoch: 1 | Step: 95000 | Train loss: 1.087 | Eval loss: 1.079 | Eval accuracy: 0.416 | ɛ: 0.04
+2024-06-17 23:15:41,749 - INFO - Epoch: 1 | Step: 100000 | Train loss: 1.086 | Eval loss: 1.080 | Eval accuracy: 0.416 | ɛ: 0.04
+2024-06-17 23:16:01,917 - INFO - Epoch: 1 | Step: 105000 | Train loss: 1.087 | Eval loss: 1.081 | Eval accuracy: 0.415 | ɛ: 0.04
+2024-06-17 23:16:22,517 - INFO - Epoch: 1 | Step: 110000 | Train loss: 1.086 | Eval loss: 1.081 | Eval accuracy: 0.415 | ɛ: 0.04
+2024-06-17 23:16:43,588 - INFO - Epoch: 1 | Step: 115000 | Train loss: 1.086 | Eval loss: 1.083 | Eval accuracy: 0.417 | ɛ: 0.04
+2024-06-17 23:17:04,311 - INFO - Epoch: 1 | Step: 120000 | Train loss: 1.086 | Eval loss: 1.082 | Eval accuracy: 0.420 | ɛ: 0.04
+2024-06-17 23:17:25,660 - INFO - Epoch: 1 | Step: 125000 | Train loss: 1.086 | Eval loss: 1.081 | Eval accuracy: 0.415 | ɛ: 0.04
+2024-06-17 23:17:46,856 - INFO - Epoch: 1 | Step: 130000 | Train loss: 1.086 | Eval loss: 1.082 | Eval accuracy: 0.416 | ɛ: 0.04
+2024-06-17 23:18:08,087 - INFO - Epoch: 1 | Step: 135000 | Train loss: 1.086 | Eval loss: 1.082 | Eval accuracy: 0.418 | ɛ: 0.04
+2024-06-17 23:18:27,488 - INFO - Epoch: 1 | Step: 140000 | Train loss: 1.086 | Eval loss: 1.083 | Eval accuracy: 0.420 | ɛ: 0.05
+2024-06-17 23:18:48,126 - INFO - Epoch: 1 | Step: 145000 | Train loss: 1.086 | Eval loss: 1.086 | Eval accuracy: 0.417 | ɛ: 0.05
+2024-06-17 23:19:08,631 - INFO - Epoch: 1 | Step: 150000 | Train loss: 1.086 | Eval loss: 1.087 | Eval accuracy: 0.418 | ɛ: 0.05
+2024-06-17 23:19:30,260 - INFO - Epoch: 1 | Step: 155000 | Train loss: 1.086 | Eval loss: 1.083 | Eval accuracy: 0.421 | ɛ: 0.05
+2024-06-17 23:19:51,238 - INFO - Epoch: 1 | Step: 160000 | Train loss: 1.086 | Eval loss: 1.080 | Eval accuracy: 0.419 | ɛ: 0.05
+2024-06-17 23:20:13,166 - INFO - Epoch: 1 | Step: 165000 | Train loss: 1.086 | Eval loss: 1.081 | Eval accuracy: 0.418 | ɛ: 0.05
+2024-06-17 23:20:35,121 - INFO - Epoch: 1 | Step: 170000 | Train loss: 1.086 | Eval loss: 1.080 | Eval accuracy: 0.419 | ɛ: 0.05
+2024-06-17 23:20:56,282 - INFO - Epoch: 1 | Step: 175000 | Train loss: 1.086 | Eval loss: 1.080 | Eval accuracy: 0.420 | ɛ: 0.05
+2024-06-17 23:21:17,532 - INFO - Epoch: 1 | Step: 180000 | Train loss: 1.086 | Eval loss: 1.078 | Eval accuracy: 0.422 | ɛ: 0.05
+2024-06-17 23:21:38,431 - INFO - Epoch: 1 | Step: 185000 | Train loss: 1.086 | Eval loss: 1.079 | Eval accuracy: 0.422 | ɛ: 0.05
+2024-06-17 23:21:58,933 - INFO - Epoch: 1 | Step: 190000 | Train loss: 1.086 | Eval loss: 1.079 | Eval accuracy: 0.423 | ɛ: 0.05
+2024-06-17 23:22:19,607 - INFO - Epoch: 1 | Step: 195000 | Train loss: 1.086 | Eval loss: 1.079 | Eval accuracy: 0.422 | ɛ: 0.05
+2024-06-17 23:22:40,366 - INFO - Epoch: 1 | Step: 200000 | Train loss: 1.086 | Eval loss: 1.079 | Eval accuracy: 0.421 | ɛ: 0.05
+2024-06-18 00:01:40,085 - INFO - Total parameters: 4388486 || Trainable parameters: 2179 (0.04965265925423939%)
+2024-06-18 00:29:32,984 - INFO - Train results: {'train_runtime': 1672.7886, 'train_samples_per_second': 4929.937, 'train_steps_per_second': 154.061, 'train_loss': 1.007150628894314, 'epoch': 21.0}
+2024-06-18 00:29:34,315 - INFO - Evaluation results: {'eval_loss': 0.9688162803649902, 'eval_accuracy': 0.5337748344370861, 'eval_runtime': 1.1214, 'eval_samples_per_second': 8752.729, 'eval_steps_per_second': 273.774, 'epoch': 21.0}
+2024-06-18 00:29:34,315 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 00:30:09,900 - INFO - Total parameters: 4388228 || Trainable parameters: 2050 (0.046715895345456074%)
+2024-06-18 00:37:23,931 - INFO - Train results: {'train_runtime': 433.915, 'train_samples_per_second': 5069.203, 'train_steps_per_second': 158.45, 'train_loss': 0.586443315671821, 'epoch': 21.0}
+2024-06-18 00:37:24,612 - INFO - Evaluation results: {'eval_loss': 0.534360408782959, 'eval_accuracy': 0.7378729635731284, 'eval_runtime': 0.6249, 'eval_samples_per_second': 8741.754, 'eval_steps_per_second': 273.63, 'epoch': 21.0}
+2024-06-18 00:37:24,612 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 00:39:29,818 - INFO - Total parameters: 4388228 || Trainable parameters: 2050 (0.046715895345456074%)
+2024-06-18 01:05:03,949 - INFO - Train results: {'train_runtime': 1534.0292, 'train_samples_per_second': 4980.848, 'train_steps_per_second': 155.663, 'train_loss': 0.5518882374842395, 'epoch': 21.0}
+2024-06-18 01:05:08,706 - INFO - Evaluation results: {'eval_loss': 0.5404354929924011, 'eval_accuracy': 0.697303982191442, 'eval_f1': 0.6423937817778037, 'eval_runtime': 4.5626, 'eval_samples_per_second': 8861.162, 'eval_steps_per_second': 277.035, 'epoch': 21.0}
+2024-06-18 01:05:08,706 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 01:05:23,208 - INFO - Total parameters: 4388228 || Trainable parameters: 2050 (0.046715895345456074%)
+2024-06-18 01:10:01,325 - INFO - Train results: {'train_runtime': 278.0162, 'train_samples_per_second': 5087.218, 'train_steps_per_second': 159.002, 'train_loss': 0.5820772775683033, 'epoch': 21.0}
+2024-06-18 01:10:01,465 - INFO - Evaluation results: {'eval_loss': 0.5594936609268188, 'eval_accuracy': 0.6915137614678899, 'eval_runtime': 0.1039, 'eval_samples_per_second': 8391.688, 'eval_steps_per_second': 269.458, 'epoch': 21.0}
+2024-06-18 01:10:01,465 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 01:11:31,859 - INFO - Total parameters count: 4386307
+2024-06-18 01:11:31,859 - INFO - Trainable parameters count: 4386307 (100.0%)
+2024-06-18 01:39:32,342 - INFO - Train results: {'train_runtime': 1680.3679, 'train_samples_per_second': 4907.7, 'train_steps_per_second': 153.366, 'train_loss': 0.6167380450817396, 'epoch': 21.0}
+2024-06-18 01:39:33,618 - INFO - Evaluation results: {'eval_loss': 0.8576476573944092, 'eval_accuracy': 0.6811003565970454, 'eval_runtime': 1.0654, 'eval_samples_per_second': 9212.454, 'eval_steps_per_second': 288.153, 'epoch': 21.0}
+2024-06-18 01:39:33,618 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 01:40:08,938 - INFO - Total parameters count: 4386178
+2024-06-18 01:40:08,938 - INFO - Trainable parameters count: 4386178 (100.0%)
+2024-06-18 01:47:26,464 - INFO - Train results: {'train_runtime': 437.4114, 'train_samples_per_second': 5028.682, 'train_steps_per_second': 157.184, 'train_loss': 0.31532317685717515, 'epoch': 21.0}
+2024-06-18 01:47:27,113 - INFO - Evaluation results: {'eval_loss': 0.7283658385276794, 'eval_accuracy': 0.7596558667398865, 'eval_runtime': 0.5924, 'eval_samples_per_second': 9221.597, 'eval_steps_per_second': 288.65, 'epoch': 21.0}
+2024-06-18 01:47:27,113 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 01:49:32,894 - INFO - Total parameters count: 4386178
+2024-06-18 01:49:32,894 - INFO - Trainable parameters count: 4386178 (100.0%)
+2024-06-18 02:15:23,434 - INFO - Train results: {'train_runtime': 1550.4289, 'train_samples_per_second': 4928.163, 'train_steps_per_second': 154.016, 'train_loss': 0.2865173934520763, 'epoch': 21.0}
+2024-06-18 02:15:27,980 - INFO - Evaluation results: {'eval_loss': 0.48104530572891235, 'eval_accuracy': 0.8302250803858521, 'eval_f1': 0.7816377171215881, 'eval_runtime': 4.3508, 'eval_samples_per_second': 9292.497, 'eval_steps_per_second': 290.52, 'epoch': 21.0}
+2024-06-18 02:15:27,980 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 02:15:42,415 - INFO - Total parameters count: 4386178
+2024-06-18 02:15:42,415 - INFO - Trainable parameters count: 4386178 (100.0%)
+2024-06-18 02:20:22,434 - INFO - Train results: {'train_runtime': 279.9102, 'train_samples_per_second': 5052.796, 'train_steps_per_second': 157.926, 'train_loss': 0.13983999780536088, 'epoch': 21.0}
+2024-06-18 02:20:22,567 - INFO - Evaluation results: {'eval_loss': 0.9951156973838806, 'eval_accuracy': 0.7958715596330275, 'eval_runtime': 0.0958, 'eval_samples_per_second': 9103.912, 'eval_steps_per_second': 292.327, 'epoch': 21.0}
+2024-06-18 02:20:22,568 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 02:21:52,611 - INFO - New Parameters Added by Adapters: {'base_model.model.bert.embeddings.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_B.default.weight', 'base_model.model.bert.pooler.dense.weight', 'base_model.model.bert.encoder.layer.0.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.weight', 'base_model.model.classifier.original_module.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.model.classifier.modules_to_save.default.weight', 'base_model.model.classifier.modules_to_save.default.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.model.bert.embeddings.position_embeddings.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_A.default.weight', 'base_model.model.classifier.original_module.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.model.bert.embeddings.word_embeddings.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.output.dense.bias', 'base_model.model.bert.encoder.layer.1.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.model.bert.pooler.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.model.bert.encoder.layer.0.output.dense.bias', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.model.bert.embeddings.token_type_embeddings.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.model.bert.embeddings.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.weight'}
+2024-06-18 02:21:52,611 - INFO - Total parameters: 4394886 || Trainable parameters: 8579 (0.19520415319077672%)
+2024-06-18 02:49:32,233 - INFO - Train results: {'train_runtime': 1659.5206, 'train_samples_per_second': 4969.352, 'train_steps_per_second': 155.293, 'train_loss': 0.9254868892561814, 'epoch': 21.0}
+2024-06-18 02:49:33,556 - INFO - Evaluation results: {'eval_loss': 0.8802981972694397, 'eval_accuracy': 0.6007131940906776, 'eval_runtime': 1.1135, 'eval_samples_per_second': 8814.472, 'eval_steps_per_second': 275.705, 'epoch': 21.0}
+2024-06-18 02:49:33,557 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 02:50:08,951 - INFO - New Parameters Added by Adapters: {'base_model.model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.model.classifier.original_module.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.weight', 'base_model.model.bert.embeddings.word_embeddings.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.model.bert.encoder.layer.0.output.dense.bias', 'base_model.model.bert.pooler.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.1.output.dense.bias', 'base_model.model.bert.embeddings.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.model.bert.embeddings.position_embeddings.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.output.dense.weight', 'base_model.model.classifier.original_module.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.weight', 'base_model.model.bert.embeddings.token_type_embeddings.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_B.default.weight', 'base_model.model.bert.embeddings.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.model.bert.pooler.dense.weight', 'base_model.model.classifier.modules_to_save.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_B.default.weight', 'base_model.model.classifier.modules_to_save.default.bias', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.bias'}
+2024-06-18 02:50:08,951 - INFO - Total parameters: 4394628 || Trainable parameters: 8450 (0.1922802112033146%)
+2024-06-18 02:57:21,156 - INFO - Train results: {'train_runtime': 432.0989, 'train_samples_per_second': 5090.508, 'train_steps_per_second': 159.116, 'train_loss': 0.5397143703267556, 'epoch': 21.0}
+2024-06-18 02:57:21,832 - INFO - Evaluation results: {'eval_loss': 0.4884827136993408, 'eval_accuracy': 0.7711879919458173, 'eval_runtime': 0.6179, 'eval_samples_per_second': 8840.661, 'eval_steps_per_second': 276.726, 'epoch': 21.0}
+2024-06-18 02:57:21,832 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 02:59:28,990 - INFO - New Parameters Added by Adapters: {'base_model.model.bert.encoder.layer.1.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.output.dense.bias', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.model.classifier.original_module.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.weight', 'base_model.model.classifier.original_module.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.model.bert.pooler.dense.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.model.bert.embeddings.token_type_embeddings.weight', 'base_model.model.classifier.modules_to_save.default.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.model.bert.pooler.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.output.dense.bias', 'base_model.model.bert.embeddings.word_embeddings.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.model.bert.embeddings.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.model.bert.embeddings.LayerNorm.bias', 'base_model.model.bert.embeddings.position_embeddings.weight', 'base_model.model.bert.encoder.layer.1.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.model.classifier.modules_to_save.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_B.default.weight'}
+2024-06-18 02:59:28,990 - INFO - Total parameters: 4394628 || Trainable parameters: 8450 (0.1922802112033146%)
+2024-06-18 03:25:03,845 - INFO - Train results: {'train_runtime': 1534.7509, 'train_samples_per_second': 4978.506, 'train_steps_per_second': 155.589, 'train_loss': 0.5164134705743274, 'epoch': 21.0}
+2024-06-18 03:25:08,617 - INFO - Evaluation results: {'eval_loss': 0.49589622020721436, 'eval_accuracy': 0.7323769478110315, 'eval_f1': 0.6761254789272031, 'eval_runtime': 4.5785, 'eval_samples_per_second': 8830.428, 'eval_steps_per_second': 276.074, 'epoch': 21.0}
+2024-06-18 03:25:08,618 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 03:25:22,816 - INFO - New Parameters Added by Adapters: {'base_model.model.bert.encoder.layer.0.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.weight', 'base_model.model.bert.encoder.layer.1.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.lora_B.default.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.weight', 'base_model.model.bert.pooler.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.bias', 'base_model.model.bert.embeddings.position_embeddings.weight', 'base_model.model.classifier.modules_to_save.default.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.weight', 'base_model.model.classifier.modules_to_save.default.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.1.output.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.base_layer.bias', 'base_model.model.bert.embeddings.LayerNorm.bias', 'base_model.model.bert.encoder.layer.0.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.bias', 'base_model.model.bert.encoder.layer.1.output.dense.weight', 'base_model.model.bert.encoder.layer.0.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.base_layer.weight', 'base_model.model.bert.encoder.layer.1.attention.self.query.lora_B.default.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.key.bias', 'base_model.model.bert.embeddings.token_type_embeddings.weight', 'base_model.model.bert.encoder.layer.0.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.attention.output.dense.bias', 'base_model.model.bert.embeddings.LayerNorm.weight', 'base_model.model.bert.encoder.layer.1.attention.self.key.weight', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.output.dense.bias', 'base_model.model.bert.embeddings.word_embeddings.weight', 'base_model.model.bert.encoder.layer.1.attention.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.weight', 'base_model.model.bert.encoder.layer.0.attention.self.key.bias', 'base_model.model.bert.encoder.layer.1.intermediate.dense.weight', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.weight', 'base_model.model.classifier.original_module.bias', 'base_model.model.bert.encoder.layer.0.intermediate.dense.bias', 'base_model.model.bert.encoder.layer.1.output.LayerNorm.bias', 'base_model.model.bert.encoder.layer.1.attention.self.value.base_layer.bias', 'base_model.model.bert.pooler.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.query.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.output.dense.bias', 'base_model.model.bert.encoder.layer.0.attention.self.value.base_layer.bias', 'base_model.model.bert.encoder.layer.0.output.dense.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_A.default.weight', 'base_model.model.bert.encoder.layer.0.output.LayerNorm.bias', 'base_model.model.classifier.original_module.weight', 'base_model.model.bert.encoder.layer.0.attention.self.value.lora_B.default.weight'}
+2024-06-18 03:25:22,817 - INFO - Total parameters: 4394628 || Trainable parameters: 8450 (0.1922802112033146%)
+2024-06-18 03:30:00,250 - INFO - Train results: {'train_runtime': 277.3289, 'train_samples_per_second': 5099.825, 'train_steps_per_second': 159.396, 'train_loss': 0.4866330280116262, 'epoch': 21.0}
+2024-06-18 03:30:00,389 - INFO - Evaluation results: {'eval_loss': 0.48064568638801575, 'eval_accuracy': 0.7763761467889908, 'eval_runtime': 0.1027, 'eval_samples_per_second': 8494.083, 'eval_steps_per_second': 272.746, 'epoch': 21.0}
+2024-06-18 03:30:00,390 - INFO - Results saved to results/evaluation_results.json
+2024-06-18 03:31:29,981 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 03:31:30,126 - ERROR - Something went wrong while running Prefix+LoRA
+2024-06-18 03:31:30,126 - ERROR - Error: BertForSequenceClassification.__init__() got an unexpected keyword argument 'num_labels'
+2024-06-18 03:32:05,213 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 03:32:05,363 - ERROR - Something went wrong while running Prefix+LoRA
+2024-06-18 03:32:05,363 - ERROR - Error: BertForSequenceClassification.__init__() got an unexpected keyword argument 'num_labels'
+2024-06-18 03:34:10,039 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 03:34:10,247 - ERROR - Something went wrong while running Prefix+LoRA
+2024-06-18 03:34:10,247 - ERROR - Error: BertForSequenceClassification.__init__() got an unexpected keyword argument 'num_labels'
+2024-06-18 03:34:24,236 - INFO - Metric: EvaluationModule(name: "glue", module_type: "metric", features: {'predictions': Value(dtype='int64', id=None), 'references': Value(dtype='int64', id=None)}, usage: """
+Compute GLUE evaluation metric associated to each GLUE dataset.
+Args:
+    predictions: list of predictions to score.
+        Each translation should be tokenized into a list of tokens.
+    references: list of lists of references for each translation.
+        Each reference should be tokenized into a list of tokens.
+Returns: depending on the GLUE subset, one or several of:
+    "accuracy": Accuracy
+    "f1": F1 score
+    "pearson": Pearson Correlation
+    "spearmanr": Spearman Correlation
+    "matthews_correlation": Matthew Correlation
+Examples:
+
+    >>> glue_metric = evaluate.load('glue', 'sst2')  # 'sst2' or any of ["mnli", "mnli_mismatched", "mnli_matched", "qnli", "rte", "wnli", "hans"]
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'mrpc')  # 'mrpc' or 'qqp'
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'accuracy': 1.0, 'f1': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'stsb')
+    >>> references = [0., 1., 2., 3., 4., 5.]
+    >>> predictions = [0., 1., 2., 3., 4., 5.]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print({"pearson": round(results["pearson"], 2), "spearmanr": round(results["spearmanr"], 2)})
+    {'pearson': 1.0, 'spearmanr': 1.0}
+
+    >>> glue_metric = evaluate.load('glue', 'cola')
+    >>> references = [0, 1]
+    >>> predictions = [0, 1]
+    >>> results = glue_metric.compute(predictions=predictions, references=references)
+    >>> print(results)
+    {'matthews_correlation': 1.0}
+""", stored examples: 0)
+2024-06-18 03:34:24,390 - ERROR - Something went wrong while running Prefix+LoRA
+2024-06-18 03:34:24,391 - ERROR - Error: BertForSequenceClassification.__init__() got an unexpected keyword argument 'num_labels'
+2024-06-18 03:34:26,290 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 03:34:26,290 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 03:34:28,133 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 03:34:28,133 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 03:34:29,979 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 03:34:29,979 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps
+2024-06-18 03:34:31,841 - ERROR - Something went wrong while running Additional Layer
+2024-06-18 03:34:31,841 - ERROR - Error: --load_best_model_at_end requires the save and eval strategy to match, but found
+- Evaluation strategy: no
+- Save strategy: steps

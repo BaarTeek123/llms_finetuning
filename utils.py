@@ -123,25 +123,14 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
                         f"Eval accuracy: {eval_accuracy:.3f} | "
                         f"ɛ: {eps:.2f}"
                     )
-        train_loss = np.mean(losses)
+        train_results_list.append(np.mean(losses))
 
-        train_eval_loss, train_eval_accuracy = evaluate(model, train_dataloader, device)
-
-        # Save the results for this epoch
-        train_results = {
-            "epoch": epoch,
-            "loss": train_loss,
-            "eval_loss": train_eval_loss,
-            "eval_accuracy": train_eval_accuracy
-        }
-
-        train_results_list.append(train_results)
 
     return model, train_results_list
 
 
 def evaluate(model, test_dataloader, device):
-    model.eval()
+
     loss_arr = []
     accuracy_arr = []
 
@@ -163,7 +152,6 @@ def evaluate(model, test_dataloader, device):
             loss_arr.append(loss.item())
             accuracy_arr.append(accuracy(preds, labels))
 
-    model.train()
     return np.mean(loss_arr), np.mean(accuracy_arr)
 
 
