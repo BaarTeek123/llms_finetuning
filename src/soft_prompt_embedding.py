@@ -72,11 +72,18 @@ class BertForSequenceClassificationWithSoftPromptPeft(nn.Module):
         self.soft_prompt = SoftPrompt(num_soft_tokens, self.embedding_size)
         self.num_soft_prompts = num_soft_tokens
 
-    def forward(self, input_ids=None, attention_mask=None, labels=None, **kwargs):
+    def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None, **kwargs):
         inputs_embeds = self.bert.bert.embeddings(input_ids)
         inputs_embeds = self.soft_prompt(inputs_embeds)
         attention_mask = torch.cat(
             [torch.ones((attention_mask.size(0), self.num_soft_prompts), device=attention_mask.device), attention_mask],
             dim=1)
+        # Adjust token type ids
+        if token_type_ids is not None:
+            token_type_ids = torch.cat(
+                [torch.zeros((token_type_ids.size(0), self.num_soft_prompts), device=token_type_ids.device,
+                             dtype=token_type_ids.dtype), token_type_ids], dim=1
+            )
+
         outputs = self.bert(inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels, **kwargs)
         return outputs
