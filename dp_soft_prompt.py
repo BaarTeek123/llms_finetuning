@@ -48,6 +48,7 @@ def main(dataset_name: str, epsilon: float):
                                  batch_size=configuration.BATCH_SIZE)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    logger.info(f"Device: {device}")
     model = model.to(device)
 
     total_params, trainable_params = count_trainable_parameters(model)
@@ -56,7 +57,7 @@ def main(dataset_name: str, epsilon: float):
 
     model, train_epsilon, delta = train_prompt_dpsgd(
         model, train_dataloader, configuration.EPOCHS, configuration.LR, configuration.MAX_GRAD_NORM,
-        epsilon, configuration.DELTA, device,
+        epsilon, configuration.DELTA, device
     )
     logger.info("Training finished")
     logger.info(f"epsilon: {train_epsilon}, delta: {delta}")

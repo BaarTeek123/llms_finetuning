@@ -113,7 +113,7 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
                 optimizer=optimizer
         ) as memory_safe_data_loader:
             for step, batch in enumerate(tqdm(memory_safe_data_loader)):
-
+                # Print layer names before forward pass
                 optimizer.zero_grad()
 
                 batch = tuple(t.to(device) for t in batch)
@@ -125,11 +125,12 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
                 outputs = model(**inputs)
 
                 loss = outputs[0]
-                loss.backward()
 
+                loss.backward()
+                optimizer.step()
                 losses.append(loss.item())
 
-                optimizer.step()
+
 
                 if step > 0 and step % logger_step == 0:
                     train_loss = np.mean(losses)

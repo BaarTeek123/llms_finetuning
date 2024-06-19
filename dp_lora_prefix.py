@@ -1,9 +1,10 @@
 import argparse
 
+import adapters
 import torch
+from adapters import PrefixTuningConfig, LoRAConfig
 from numpy import inf
 from opacus import PrivacyEngine
-from peft import get_peft_model, LoraConfig, TaskType
 from torch.optim import SGD
 from torch.utils.data import DataLoader, SequentialSampler
 from transformers import BertTokenizer, BertForSequenceClassification, TrainingArguments
@@ -14,7 +15,7 @@ from config import PrivateConfig
 from src.dataset import GlueDataset
 from utils import count_trainable_parameters, save_results_to_json, train_model, evaluate, _dataset_to_tensordataset
 
-TASK_NAME = 'DP LoRA'
+TASK_NAME = 'DP Prefix+LoRA'
 
 
 def main(dataset_name: str, epsilon: float):
@@ -40,14 +41,26 @@ def main(dataset_name: str, epsilon: float):
 
     model = BertForSequenceClassification.from_pretrained(configuration.MODEL_NAME, num_labels=glue_dataset.num_labels)
 
-    peft_config = LoraConfig(
-        task_type=TaskType.SEQ_CLS,
-        inference_mode=False,
-        r=8,
-        lora_alpha=32,
-        lora_dropout=0.1
-    )
-    model = get_peft_model(model, peft_config)
+    for param in model.parameters():
+        param.requires_grad = False
+
+    adapters.init(model)
+
+    # set up peft
+    prefix_config = PrefixTuningConfig(flat=False, prefix_length=30)
+    # set up lora config
+    lora_config = LoRAConfig(r=8, alpha=16)
+    model.add_adapter("lora", config=lora_config, set_active=True)
+    model.add_adapter("prefix", config=prefix_config, set_active=True)
+    # Activate the adapter
+    model.train_adapter("lora")
+    model.train_adapter("prefix")
+    model.train()
+
+    # debugging purpose
+    total_params, trainable_params = count_trainable_parameters(model)
+    logger.info(
+        f"Total parameters: {total_params} || Trainable parameters: {trainable_params} ({trainable_params / total_params * 100} %)")
 
     train_dataloader = DataLoader(_dataset_to_tensordataset(glue_dataset.train_dataset),
                                   batch_size=configuration.BATCH_SIZE, shuffle=True)

@@ -50,6 +50,7 @@ def main(dataset_name: str, epsilon: float):
                                  batch_size=configuration.BATCH_SIZE)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    logger.info(f"Device: {device}")
     model = model.to(device)
 
     # Define optimizer

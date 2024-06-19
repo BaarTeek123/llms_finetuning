@@ -34,7 +34,6 @@ def main(dataset_name: str):
     tokenizer = BertTokenizer.from_pretrained(configuration.MODEL_NAME, do_lower_case=False)
     # Initialize the dataset
     glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
-    logger.info(f"Metric: {glue_dataset.metric}")
 
     model = BertForSequenceClassification.from_pretrained(
         configuration.MODEL_NAME, num_labels=glue_dataset.num_labels)
