@@ -49,7 +49,8 @@ def main(dataset_name: str):
         eval_dataset=glue_dataset.eval_dataset,
         tokenizer=tokenizer,
         data_collator=glue_dataset.data_collator,
-        compute_metrics=glue_dataset.compute_metrics
+        compute_metrics=glue_dataset.compute_metrics,
+
     )
 
     # Train the model
@@ -81,8 +82,6 @@ def main(dataset_name: str):
         }
     )
 
-for model in ['qqp', 'sst2']:
-    main(model)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=TASK_NAME)

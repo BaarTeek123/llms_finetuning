@@ -103,6 +103,9 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
 
     for epoch in range(1, epochs + 1):
         losses = []
+        total_params, trainable_params = count_trainable_parameters(model)
+        logger.info(
+            f"Total parameters: {total_params} || Trainable parameters: {trainable_params} ({trainable_params / total_params * 100}%)")
 
         with BatchMemoryManager(
                 data_loader=train_dataloader,
@@ -110,6 +113,7 @@ def train_model(model, optimizer, train_dataloader, test_dataloader, device, pri
                 optimizer=optimizer
         ) as memory_safe_data_loader:
             for step, batch in enumerate(tqdm(memory_safe_data_loader)):
+
                 optimizer.zero_grad()
 
                 batch = tuple(t.to(device) for t in batch)

@@ -110,7 +110,7 @@ main('qnli', 8.0)
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=TASK_NAME)
     parser.add_argument('dataset', choices=['mnli', 'qnli', 'qqp', 'sst2'], help='Select the dataset to use')
-    parser.add_argument('--epsilon', type=lambda x: (
+    parser.add_argument('epsilon', type=lambda x: (
         float(x) if float(x) > 0 else argparse.ArgumentTypeError(f"{x} is not a positive float or int")),
                         help='Epsilon value for DP (must be > 0)', default=inf)
 
