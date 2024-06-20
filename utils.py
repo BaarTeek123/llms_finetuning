@@ -187,3 +187,6 @@ if __name__ == '__main__':
     df = create_output_file('results/evaluation_results_dp.json')
     df.to_csv('results/evaluation_results_dp.csv')
     print(df)
+    df = create_output_file('results/evaluation_results_dp_1.json')
+    df.to_csv('results/evaluation_results_dp_1.csv')
+    print(df)
