@@ -95,7 +95,7 @@ def main(dataset_name: str, epsilon: float):
 
     save_results_to_json(
         configuration.RESULTS_PATH,
-        'LoRA DP',
+        TASK_NAME,
         dataset_name,
         train_results=train_results,
         eval_results=eval_results,
