@@ -38,11 +38,12 @@ def main(dataset_name: str, epsilon: float):
     # Initialize the dataset
     glue_dataset = GlueDataset(tokenizer, data_args=data_args, dataset_name=dataset_name, training_args=training_args)
 
-    model = BertForSequenceClassificationWithSoftPrompt(configuration.MODEL_NAME, num_soft_tokens=50,
+    model = BertForSequenceClassificationWithSoftPrompt(configuration.MODEL_NAME, num_soft_tokens=500,
                                                         num_labels=glue_dataset.num_labels)
 
     train_dataloader = DataLoader(_dataset_to_tensordataset(glue_dataset.train_dataset),
                                   batch_size=configuration.BATCH_SIZE, shuffle=True)
+
     eval_dataloader = DataLoader(_dataset_to_tensordataset(glue_dataset.eval_dataset),
                                  sampler=SequentialSampler(_dataset_to_tensordataset(glue_dataset.eval_dataset)),
                                  batch_size=configuration.BATCH_SIZE)
